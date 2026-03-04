@@ -1,0 +1,93 @@
+---
+title: "How to Start a Journal Article"
+author: "Darren Shoemaker"
+date: "02/24/2026"
+categories: 
+  - writing
+  - academia
+format: html
+toc: true
+embed-resources: true
+editor: visual
+bibliography: references.bib
+---
+
+## The First Sentence is the Hardest
+
+One of the most important yet critically under-explained transitions in academia is the shift from writing *research papers* as a student to writing *manuscripts* for publication in a scholarly journal. Ideally, this transition will occur gradually during a master's or PhD program with input and training from your advisor and committee. In practice, however, the last few months of a graduate program are often an overwhelming spring to complete a thesis or dissertation in time for a defense, and publishing is pushed to the side. Suddenly, the former student has graduated and is considered an early-career professional, where they are expected to already be familiar with academic writing.
+
+My goal is to demystify the process of starting a journal article. You may be at the beginning of a new study, or you may have already completed an experiment and decided its worthy of its own publication. Check out this [xkcd comic](https://xkcd.com/2456) to see where your project fits. Every project and structure is different, so I can't promise every step will be relevant. I am also still learning and growing every day, so what works for me may not work for everyone. Think critically about how you prefer to work and adapt these guidelines as you see fit.
+
+The most important part is to actually start writing.
+
+### Start with Your Research Question
+
+*What question are you trying to answer?*
+
+Having a specific research question allows your paper to follow a clear narrative structure:
+
+```{mermaid}
+flowchart LR
+  A(What is our question?) --> B(How we attempted to answer the question) 
+  B --> C(What we want to try next)
+```
+
+A strong research question is specific and explicit, minimizing ambiguity both to yourself and your colleagues about what you want to accomplish. An example research question from one of my recent papers:
+
+> "Our research objective was to identify the relationship between fish community structure and climatic variables in channelised agricultural headwater streams in northeast Indiana and central Ohio."^1^
+
+You also want to be sure to contextualize your research question in the broader scientific literature. Has your question been asked before in a different setting? Are you trying to reproduce or re-examine an existing study or is your question novel? How does your research question support or critique existing understanding?
+
+Developing your research question early helps to maintain focus as you write. This can make the process seem less overwhelming by reducing spurious tangents or stream-of-consciousness that don't actually help to answer your research question. Get in the habit of asking yourself how each sentence contributes to your overall objective. If you don't have a good answer, what you're writing may not serve your overall goals.
+
+### Beware of Hidden Objectives
+
+You may end up revising your research question a few times during your writing process, both for clarity and as you gain a better understanding of possible hidden objectives, which are particularly common in applied research.
+
+A hidden objective often emerges during writing, particularly in sentences such as "We examined \[study organism\] to better understand \[study system\] to inform \[management/policy/regulatory group\]." Often, the first draft of a research objective may omit or overlook the last part of the statement. Who or what will benefit from your study? If you are attempting to provide information to a group, should that be included in your research question? Is your overall goal just to gain understanding, or to provide information? Nothing is wrong with either approach, but be thoughtful about your goals and the implications of your results when developing your research question.
+
+### Outline your Process
+
+*What needs to happen to answer your research question?*
+
+Once you have explicitly defined your research question, start thinking about your research process. What type of information do you need to answer that question? How will that information be obtained? What analyses or visualizations will you need to turn that information into usable data? How will you present your results?
+
+These questions are challenging and important, but you don't need to know exactly how to answer them right now. Just have a vague sense of what you will need to do. Personally, I like using bulleted lists to outline this part, but find a structure that makes sense for you. Just write out step-by-step, breaking down as much as possible, what you think needs to happen to answer your research question.
+
+> "Step 1: Acquire Data"
+
+This is not useful. You don't provide any information to you or your collaborators and may give a sense you don't really understand the work that needs to be done. Instead, try writing something like:
+
+> "Step 1: obtain landcover data for Erie County, NY, from USGS National Landcover database through the Google Earth Engine API."
+
+This version is specific, can easily be tied back to your research question, and most importantly, is an actionable step you can look back to if you get stuck later.
+
+Your outline should be a living document as you will almost certainly end up revising it. Some steps may prove unfeasible, you might find more specific sub-steps are helpful, or you may end up removing a section from a publication. All of these are completely normal, as long as your revisions relate back to your research question.
+
+### Identify your Target Journal(s)
+
+Depending on the stage of your research, this might not be realistic, but in generally I recommend identifying a few potential target journals as early as possible. Consider where the papers you cite are often published, the impact factor, any article processing charges, and the reputation of the journal. The nuances of journal selection warrant their own post, but having journals in mind is helpful for the next step.
+
+### Find your Collaborators
+
+Finally, now that you're armed with a solid research question, an outline of your methods, and have a few journals in mind, think of who you want to bring on to the project. You likely know a few people with expertise relevant to your idea, but remember the more people are involved, the more feedback you'll have to consider before you can submit.
+
+Being transparent with your potential collaborators is critically important. Be honest about how much information you have, how long you think your analysis will take, and your own limitations. If you have a step in your process that you have no idea how to accomplish, be up front about that. Not knowing a certain method or technique is not bad - that may be why you're reaching out for help in the first place - but misrepresenting your own expertise is problematic. Remember that this likely won't be the only time you work with these individuals, so making a good first impression matters.
+
+Similarly, be up front about what you can offer collaborators. Do you intend to make them all authors on the paper? How much do you expect them to contribute to earn authorship? What is your anticipated author order? These conversations can be uncomfortable, but they are crucial to strong collaborations.
+
+In general, the more information you can provide to your potential collaborators, the more informed decisions and support they can offer. Don't take it personally if they are not interested in contributing to your project - they have a better understanding of their own limitations than you do.
+
+### Wrapping Up
+
+At this point, you should have a solid foundation to start writing. Your research question guides your overall objective. The context of your research can be used to add background information in the introduction and the outline of your research process can be used as a map for your methods section.
+
+Once you have results, just write them out exactly as they appear. You can always revise later, but I recommend getting them on paper as quickly as possible. This helps keep collaborators informed of your progress and prevents you from forgetting or losing potentially important information.
+
+Beyond the first sentence, the discussion section is likely the most challenging, because every discussion is unique to a research project. In general, you want to contextualize your results. As your introduction described gaps in current understanding, your discussion examines how well your study filled those gaps, and identifies those that remain. You should also use this section to address any limitations of your methods, and how you (or others) might address them in the future. Finally, you can describe any broader implications of your research and how your findings might impact the world around you.
+
+Starting a manuscript seems overwhelming, but by breaking down the process into manageable steps, you can move a lot faster than you might think. Remember that the most important thing is to just start writing.
+
+## References
+
+1.  Shoemaker, D. J., P. C. Smiley, and R. B. Gillespie. 2025. “ Evaluating the Influence of Climatic and Hydrologic Variables on Fish Communities in Channelised Agricultural Headwater Streams in the Midwestern USA.” *Freshwater Biology* 70, no. 12: e70148. <https://doi.org/10.1111/fwb.70148>.

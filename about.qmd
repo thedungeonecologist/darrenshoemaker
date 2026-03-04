@@ -1,0 +1,31 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: trestles
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/darrenshoemaker/
+    - icon: github
+      text: Github
+      href: https://github.com/thedungeonecologist
+---
+
+Darren Shoemaker is a postdoctoral research associate in the department of Biological Sciences at the University at Buffalo, New York. His primary research interests are examining climatic influences on aquatic ecosystems at broad scales. His work integrates the fields of ecology, climate science, machine learning, and bioinformatics. Understanding climatic influences on ecosystems is increasingly relevant in the 21st century to guide natural resources management and policymakers when making decisions sensitive to future climate.
+
+## Education
+
+Mississippi State University \| Mississippi State, MS
+
+PhD in Forest Resources \| May 2025
+
+Purdue University - Fort Wayne \| Fort Wayne, IN
+
+MS in Biology \| May 2021
+
+BS in Biology, concentration ecology & evolution \| May 2018
+
+## Professional Experience
+
+University at Buffalo \| Postdoctoral Research Associate \| July 2025 - present

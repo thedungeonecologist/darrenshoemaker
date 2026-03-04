@@ -10,3 +10,5 @@
 
 quarto/
 temp/
+
+**/*.quarto_ipynb
