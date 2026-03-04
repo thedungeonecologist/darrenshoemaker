@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-word-count','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
@@ -219,6 +219,13 @@ window.Quarto = {
 <h3 class="no-anchor listing-title">
 <a href="./posts/howtowrite/index.html" class="no-external">How to Start a Journal Article</a>
 </h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('d3JpdGluZw=='); return false;">writing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWNhZGVtaWE='); return false;">academia</div>
+
+</div>
 </div>
 <div class="metadata">
 <a href="./posts/howtowrite/index.html" class="no-external">

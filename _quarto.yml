@@ -26,5 +26,5 @@ listing:
   id: posts
   contents: posts
   type: default
-  fields: [image, date, title, reading-time, word-count]
+  fields: [image, date, title, reading-time, word-count, categories]
   sort: "date desc"
