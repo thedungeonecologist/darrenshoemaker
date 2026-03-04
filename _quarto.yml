@@ -22,3 +22,9 @@ format:
 
 editor: visual
 
+listing:
+  id: posts
+  contents: posts
+  type: default
+  fields: [image, date, title, reading-time, word-count]
+  sort: "date desc"
