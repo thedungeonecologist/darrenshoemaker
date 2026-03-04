@@ -2,7 +2,7 @@
 title: "How to Start a Journal Article"
 author: "Darren Shoemaker"
 date: "02/24/2026"
-categories: 
+categories:
   - writing
   - academia
 format: html
