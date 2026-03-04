@@ -8,6 +8,8 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
+word-count: true
+reading-time: true
 page-layout: full
 title-block-banner: true
 ---
