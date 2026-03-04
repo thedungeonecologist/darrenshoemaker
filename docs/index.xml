@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Darren Shoemaker</title>
+<link>https://your-website-url.example.com/</link>
+<atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>A blog built with Quarto</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Tue, 24 Feb 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>How to Start a Journal Article</title>
+  <dc:creator>Darren Shoemaker</dc:creator>
+  <link>https://your-website-url.example.com/posts/howtowrite/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="the-first-sentence-is-the-hardest" class="level2">
+<h2 class="anchored" data-anchor-id="the-first-sentence-is-the-hardest">The First Sentence is the Hardest</h2>
+<p>One of the most important yet critically under-explained transitions in academia is the shift from writing <em>research papers</em> as a student to writing <em>manuscripts</em> for publication in a scholarly journal. Ideally, this transition will occur gradually during a master’s or PhD program with input and training from your advisor and committee. In practice, however, the last few months of a graduate program are often an overwhelming spring to complete a thesis or dissertation in time for a defense, and publishing is pushed to the side. Suddenly, the former student has graduated and is considered an early-career professional, where they are expected to already be familiar with academic writing.</p>
+<p>My goal is to demystify the process of starting a journal article. You may be at the beginning of a new study, or you may have already completed an experiment and decided its worthy of its own publication. Check out this <a href="https://xkcd.com/2456">xkcd comic</a> to see where your project fits. Every project and structure is different, so I can’t promise every step will be relevant. I am also still learning and growing every day, so what works for me may not work for everyone. Think critically about how you prefer to work and adapt these guidelines as you see fit.</p>
+<p>The most important part is to actually start writing.</p>
+<section id="start-with-your-research-question" class="level3">
+<h3 class="anchored" data-anchor-id="start-with-your-research-question">Start with Your Research Question</h3>
+<p><em>What question are you trying to answer?</em></p>
+<p>Having a specific research question allows your paper to follow a clear narrative structure:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A(What is our question?) --&gt; B(How we attempted to answer the question) 
+  B --&gt; C(What we want to try next)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>A strong research question is specific and explicit, minimizing ambiguity both to yourself and your colleagues about what you want to accomplish. An example research question from one of my recent papers:</p>
+<blockquote class="blockquote">
+<p>“Our research objective was to identify the relationship between fish community structure and climatic variables in channelised agricultural headwater streams in northeast Indiana and central Ohio.”<sup>1</sup></p>
+</blockquote>
+<p>You also want to be sure to contextualize your research question in the broader scientific literature. Has your question been asked before in a different setting? Are you trying to reproduce or re-examine an existing study or is your question novel? How does your research question support or critique existing understanding?</p>
+<p>Developing your research question early helps to maintain focus as you write. This can make the process seem less overwhelming by reducing spurious tangents or stream-of-consciousness that don’t actually help to answer your research question. Get in the habit of asking yourself how each sentence contributes to your overall objective. If you don’t have a good answer, what you’re writing may not serve your overall goals.</p>
+</section>
+<section id="beware-of-hidden-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="beware-of-hidden-objectives">Beware of Hidden Objectives</h3>
+<p>You may end up revising your research question a few times during your writing process, both for clarity and as you gain a better understanding of possible hidden objectives, which are particularly common in applied research.</p>
+<p>A hidden objective often emerges during writing, particularly in sentences such as “We examined [study organism] to better understand [study system] to inform [management/policy/regulatory group].” Often, the first draft of a research objective may omit or overlook the last part of the statement. Who or what will benefit from your study? If you are attempting to provide information to a group, should that be included in your research question? Is your overall goal just to gain understanding, or to provide information? Nothing is wrong with either approach, but be thoughtful about your goals and the implications of your results when developing your research question.</p>
+</section>
+<section id="outline-your-process" class="level3">
+<h3 class="anchored" data-anchor-id="outline-your-process">Outline your Process</h3>
+<p><em>What needs to happen to answer your research question?</em></p>
+<p>Once you have explicitly defined your research question, start thinking about your research process. What type of information do you need to answer that question? How will that information be obtained? What analyses or visualizations will you need to turn that information into usable data? How will you present your results?</p>
+<p>These questions are challenging and important, but you don’t need to know exactly how to answer them right now. Just have a vague sense of what you will need to do. Personally, I like using bulleted lists to outline this part, but find a structure that makes sense for you. Just write out step-by-step, breaking down as much as possible, what you think needs to happen to answer your research question.</p>
+<blockquote class="blockquote">
+<p>“Step 1: Acquire Data”</p>
+</blockquote>
+<p>This is not useful. You don’t provide any information to you or your collaborators and may give a sense you don’t really understand the work that needs to be done. Instead, try writing something like:</p>
+<blockquote class="blockquote">
+<p>“Step 1: obtain landcover data for Erie County, NY, from USGS National Landcover database through the Google Earth Engine API.”</p>
+</blockquote>
+<p>This version is specific, can easily be tied back to your research question, and most importantly, is an actionable step you can look back to if you get stuck later.</p>
+<p>Your outline should be a living document as you will almost certainly end up revising it. Some steps may prove unfeasible, you might find more specific sub-steps are helpful, or you may end up removing a section from a publication. All of these are completely normal, as long as your revisions relate back to your research question.</p>
+</section>
+<section id="identify-your-target-journals" class="level3">
+<h3 class="anchored" data-anchor-id="identify-your-target-journals">Identify your Target Journal(s)</h3>
+<p>Depending on the stage of your research, this might not be realistic, but in generally I recommend identifying a few potential target journals as early as possible. Consider where the papers you cite are often published, the impact factor, any article processing charges, and the reputation of the journal. The nuances of journal selection warrant their own post, but having journals in mind is helpful for the next step.</p>
+</section>
+<section id="find-your-collaborators" class="level3">
+<h3 class="anchored" data-anchor-id="find-your-collaborators">Find your Collaborators</h3>
+<p>Finally, now that you’re armed with a solid research question, an outline of your methods, and have a few journals in mind, think of who you want to bring on to the project. You likely know a few people with expertise relevant to your idea, but remember the more people are involved, the more feedback you’ll have to consider before you can submit.</p>
+<p>Being transparent with your potential collaborators is critically important. Be honest about how much information you have, how long you think your analysis will take, and your own limitations. If you have a step in your process that you have no idea how to accomplish, be up front about that. Not knowing a certain method or technique is not bad - that may be why you’re reaching out for help in the first place - but misrepresenting your own expertise is problematic. Remember that this likely won’t be the only time you work with these individuals, so making a good first impression matters.</p>
+<p>Similarly, be up front about what you can offer collaborators. Do you intend to make them all authors on the paper? How much do you expect them to contribute to earn authorship? What is your anticipated author order? These conversations can be uncomfortable, but they are crucial to strong collaborations.</p>
+<p>In general, the more information you can provide to your potential collaborators, the more informed decisions and support they can offer. Don’t take it personally if they are not interested in contributing to your project - they have a better understanding of their own limitations than you do.</p>
+</section>
+<section id="wrapping-up" class="level3">
+<h3 class="anchored" data-anchor-id="wrapping-up">Wrapping Up</h3>
+<p>At this point, you should have a solid foundation to start writing. Your research question guides your overall objective. The context of your research can be used to add background information in the introduction and the outline of your research process can be used as a map for your methods section.</p>
+<p>Once you have results, just write them out exactly as they appear. You can always revise later, but I recommend getting them on paper as quickly as possible. This helps keep collaborators informed of your progress and prevents you from forgetting or losing potentially important information.</p>
+<p>Beyond the first sentence, the discussion section is likely the most challenging, because every discussion is unique to a research project. In general, you want to contextualize your results. As your introduction described gaps in current understanding, your discussion examines how well your study filled those gaps, and identifies those that remain. You should also use this section to address any limitations of your methods, and how you (or others) might address them in the future. Finally, you can describe any broader implications of your research and how your findings might impact the world around you.</p>
+<p>Starting a manuscript seems overwhelming, but by breaking down the process into manageable steps, you can move a lot faster than you might think. Remember that the most important thing is to just start writing.</p>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ol type="1">
+<li>Shoemaker, D. J., P. C. Smiley, and R. B. Gillespie. 2025. “ Evaluating the Influence of Climatic and Hydrologic Variables on Fish Communities in Channelised Agricultural Headwater Streams in the Midwestern USA.” <em>Freshwater Biology</em> 70, no. 12: e70148. <a href="https://doi.org/10.1111/fwb.70148" class="uri">https://doi.org/10.1111/fwb.70148</a>.</li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://your-website-url.example.com/posts/howtowrite/</guid>
+  <pubDate>Tue, 24 Feb 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Tristan O&#39;Malley</dc:creator>
+  <link>https://your-website-url.example.com/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This is the first post in a Quarto blog. Welcome!</p>
+<p><img src="https://your-website-url.example.com/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://your-website-url.example.com/posts/welcome/</guid>
+  <pubDate>Sun, 22 Feb 2026 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
