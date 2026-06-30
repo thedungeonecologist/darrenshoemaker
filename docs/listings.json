@@ -4,5 +4,17 @@
     "items": [
       "/posts/howtowrite/index.html"
     ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/posts/howtowrite/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/howtowrite/index.html"
+    ]
   }
 ]
