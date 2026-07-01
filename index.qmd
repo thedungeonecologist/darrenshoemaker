@@ -10,6 +10,8 @@ about:
     - icon: github
       text: Github
       href: https://github.com/thedungeonecologist
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org/0009-0002-3581-3944
 ---
 
 Darren Shoemaker is a postdoctoral research associate in the department of Biological Sciences at the University at Buffalo, New York. His primary research interests are examining climatic influences on aquatic ecosystems at broad scales. His work integrates the fields of ecology, climate science, machine learning, and bioinformatics. Understanding climatic influences on ecosystems is increasingly relevant in the 21st century to guide natural resources management and policymakers when making decisions sensitive to future climate.
