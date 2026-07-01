@@ -1,0 +1,279 @@
+---
+title: "Vitae of Darren Shoemaker"
+subtitle: "Current as of July 2026"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+embed-resources: true
+---
+
+## Academic History
+
+------------------------------------------------------------------------
+
++-------------------------+------------------------------------------------------------------------------------------------+
+|                         |                                                                                                |
++=========================+================================================================================================+
+| Highest Degree Earned:  | Ph.D., Forest Resources, 2025, Mississippi State University, Starkville, Mississippi           |
++-------------------------+------------------------------------------------------------------------------------------------+
+| Additional Credentials: | M.S., Biology: Biology, 2021, Purdue University – Fort Wayne, Fort Wayne                       |
+|                         |                                                                                                |
+|                         | B.S., Biology: Ecology and Evolution, 2018, Indiana University – Purdue University, Fort Wayne |
+|                         |                                                                                                |
+|                         | Minor – Professional Writing, 2018, Indiana University – Purdue University, Fort Wayne         |
++-------------------------+------------------------------------------------------------------------------------------------+
+
+## Work Experience/Appointments
+
+------------------------------------------------------------------------
+
+**Postdoctoral Research Associate.** Department of Biological Sciences. University at Buffalo. Buffalo, NY. 2025-Present.
+
+**Graduate Research Assistant.** Department of Wildlife, Fisheries and Aquaculture. Mississippi State University. Starkville, MS. 2021-2025.
+
+**Invasive Species Removal Specialist.** Sanctuary Native Landscapes – Fort Wayne, Indiana. Summer 2021.
+
+**Graduate Teaching Assistant.** Department of Biology. Purdue University – Fort Wayne. Fort Wayne, Indiana. 2019 – 2020.
+
+**Writing Consultant**. Helmke Library. Purdue University – Fort Wayne, Fort Wayne, Indiana. 2015 – 2019.
+
+## Scholarly Activity
+
+------------------------------------------------------------------------
+
+#### [Manuscripts Published]{.underline}
+
+1.  Ong’ondo, F., H Ahmad, F Jose, SI Jhara, **DJ Shoemaker**, M Islam, P Dash, S Bhuyan, N Islam. 2026. AI-Driven Geospatial Modeling of Urban Expansion and Environmental Impacts. Remote Sensing in Earth System Sciences. DOI: <https://doi.org/10.1007/s41976-026-00284-1>
+
+2.  **Shoemaker, D.J.**, PC Smiley Jr., RB Gillespie. 2025. Evaluating the Influence of Climatic and Hydrologic Variables on Fish Communities in Channelised Agricultural Headwater Streams in the Midwestern USA. Freshwater Biology. DOI: <https://doi.org/10.1111/fwb.70148>  
+
+3.  Ahmad, H., F Jose, P Dash, **DJ Shoemaker**, SI Jhara. 2025. Hypoxia in the Gulf of Mexico: A machine learning approach for evaluation and prediction. Regional Studies in Marine Science. DOI: <https://doi.org/10.1016/j.rsma.2025.104363>
+
+4.  Ahmad, H., F Jose, P Dash, **DJ Shoemaker**, SI Jhara. 2025. Machine learning-based estimation of chlorophyll-a in the Mississippi Sound using Landsat and ocean optics data. Environmental Earth Sciences. DOI: <http://dx.doi.org/10.1007/s12665-025-12191-7>
+
+5.  Miranda, L.E., R Krogman, **DJ Shoemaker**. 2024. Assessment of pollution and impairments of US reservoirs based on expert opinion. Frontiers in Environmental Science, section Freshwater Science. DOI: <https://doi.org/10.3389/fenvs.2024.1488955>
+
+6.  Ahmad, H, F Jose, **DJ Shoemaker**. 2024. Mapping, Dynamics, and Future Change Analysis of Sundarbans delta using Cellular Automata and Artificial Neural Network Modeling. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing. DOI: <https://doi.org/10.1109/JSTARS.2024.3367116>
+
+7.  Ahmad, H, M Abdallah, F Jose, HE Elzain, S Bhuyan, **DJ Shoemaker**, S Selvam. 2023. Evaluation and mapping of predicted future land use changes using hybrid models in a coastal area. Ecological Informatics. DOI: <https://doi.org/10.1016/j.ecoinf.2023.102324>
+
+#### [Manuscripts in Review]{.underline}
+
+1.  **Shoemaker, DJ**, PC Smiley, RB Gillespie. Evaluating the influence of climate and hydrologic variables on fish community in agricultural headwater streams in the Midwestern United States. Freshwater Biology.
+
+#### [Manuscripts in Prep]{.underline}
+
+1.  **Shoemaker, DJ**, H Ahmad, LE Miranda. Classifying Reservoir Impairment from Climate Change using Expert Opinion and Machine Learning.
+
+2.  Aby, TM, CN Cornhill, EA Cubberley, GL Curtis, JC Danielson, BM Dwyer, DM Hurst, ZR Kellogg, EB Kovacs, JW Lindberg, GN McGee, A Noland, EA Pierce, PJ Ransbottom, KN Schane, TJ Scoville, **DJ Shoemaker**, SJ Siddons, RK Sovey, EL Steffen, JL Troy, DC Youtsey, X Yu, and JM Marshall. In preparation. Comparison of old field and restoration at Salomon Farm Park, Indiana.
+
+3.  Ahmad, H, **DJ Shoemaker**, B Liu, J Douglass, P Dash. Long-Term Trends and Seasonal Drivers of Water Quality in US Southern Coastal National Reserves: Unraveling the Impacts of Climate Change.
+
+#### [Manuscript Reviews]{.underline}
+
+1.  International Journal of Biometeorology
+
+2.  Freshwater Biology
+
+3.  Environmental Monitoring and Assessment
+
+4.  Frontiers in Freshwater Science
+
+5.  Journal of Great Lakes Research
+
+#### [Conference Presentations]{.underline}
+
+1.  **Shoemaker, D.J.**, Smiley, P.C., Ruppert, K.M., and Gillespie, R.B. 2026. Occupancy Patterns of Headwater Stream Fishes in an Agricultural Watershed. Society for Freshwater Science Annual Meeting. Spokane, Washington.
+
+2.  Zachary Kellogg, Betsy Yankowiak, Bruce Kingsbury, **Darren Shoemaker**, Mark A. Jordan. 2025. Spatial Analysis and Habitat Use of Snapping Turtles in an Urban Wetland Complex. Mississippi Amphibian and Reptile Symposium. Jackson, MS.
+
+3.  **Shoemaker, D.J.** and Miranda, L.E. 2025. Projected future reservoir impairment in the conterminous United States following three climate change scenarios. Mississippi Chapter of the American Fisheries Society 51^st^ Annual Meeting. Starkville, MS.
+
+4.  **Shoemaker, D.J.** and Miranda, L.E. 2024. Predicted Impairment of Reservoirs in the United States under Three Climate Change Scenarios. Graduate Student Symposium at the Dauphin Island Sea Lab. Dauphin Island Sea Lab, AL.
+
+5.  **Shoemaker, D.J.**, Ahmad, H., Miranda, L.E. 2024. Modeling reservoir impairment from climate change using human dimensions. Mississippi Chapter of the American Fisheries Society 50^th^ Annual Meeting. Tupelo, MS.
+
+6.  **Shoemaker, D.J.**,Miranda, L.E., Dunn, C., Hunt, K.M., and Boyles, R.P. 2023. Challenges Evaluating Reservoir Fish Habitats in a Changing Climate. 153^rd^ American Fisheries Society Annual Meeting. Grand Rapids, MI.
+
+7.  **Shoemaker, D.J.**, Miranda, L.E., Dunn, C., Hunt, K.M., and Boyles, R.P. 2023. Vulnerability of Reservoir Fish Habitats to Climate Change. Mississippi Chapter of the American Fisheries Society 49^th^ Annual Meeting. Natchez, MS.
+
+8.  **Shoemaker, D.J.**, Gillespie, R, Smiley, P.C.2022. Assessing the relationships of fish communities with climate and hydrology in agricultural headwater streams. Mississippi Chapter of the American Fisheries Society 48^th^ Annual Meeting. Hattiesburg, MS.
+
+9.  **Shoemaker, D.J**, and Curtis, G.L. 2019. Influence of Agricultural Fields on Fish Assemblages within Channelized Streams. Indiana Academy of Science 134^th^ Annual Academy meeting. Indianapolis, IN.
+
+10. **Shoemaker, D.J.** and Curtis, G.L. 2019. Influence of Agricultural Fields on Fish Assemblages within Channelized Streams. Society for Ecological Restoration Midwest Great Lakes Chapter Meeting. Pella, IA.
+
+## Teaching Activity
+
+------------------------------------------------------------------------
+
+#### [Course Instruction]{.underline}
+
++----------------+--------------------------+--------------------------------------+----------+------------------------+-------------+
+|                |                          |                                      |          |                        |             |
++================+==========================+======================================+==========+========================+=============+
+| Academic Year  | Course Prefix and Number | Course Title                         | Role     | Contact Hours per Week | Total Hours |
++----------------+--------------------------+--------------------------------------+----------+------------------------+-------------+
+| Fall 2020      | BIOL11170-Lab            | Principles of Ecology & Evolution    | TA       | 6                      | 60          |
++----------------+--------------------------+--------------------------------------+----------+------------------------+-------------+
+| Summer II 2020 | BIOL11170-Lab            | Principles of Ecology & Evolution    | TA       | 3                      | 12          |
++----------------+--------------------------+--------------------------------------+----------+------------------------+-------------+
+| Spring 2020    | BIOL11190-Lab            | Principles of Structure and Function | TA       | 6                      | 60          |
++----------------+--------------------------+--------------------------------------+----------+------------------------+-------------+
+| Fall 2019      | BIOL11170-Lab            | Principles of Ecology & Evolution    | TA       | 6                      | 60          |
++----------------+--------------------------+--------------------------------------+----------+------------------------+-------------+
+
+#### [Guest Lectures]{.underline}
+
+2025 - Data-driven ecology: conservation in the 21st century. University at Buffalo Ichthyology.
+
+2020 - Arthropod identification in iNaturalist. Purdue University Fort Wayne Entomology.
+
+#### [Workshops Led]{.underline}
+
+2025 - Integrating GitHub and RStudio.
+
+#### [Other Teaching Activity]{.underline}
+
+2020 - Developed and Implemented Genetic Barcoding Semester Project 2020 (BIOL11700, Principles of Ecology & Evolution)
+
+2020 - Recorded online pre-lab lectures and lab exercise walkthroughs (BIOL11700, Principles of Ecology & Evolution)
+
+2020 - Migrated lab materials to online format for virtual instruction during COVID-19 pandemic (BIOL11900, Principles of Structure and Function)
+
+2019 - Updated lab manual and other materials for lab instruction (BIOL11700, Principles of Ecology & Evolution)
+
+2019 - Led undergraduate student groups with Indiana Department of Natural Resources boat captains for river ecological surveys
+
+## Honors and Awards
+
+------------------------------------------------------------------------
+
+#### [2025]{.underline}
+
+- Best Student Oral Presentation. American Fisheries Society Mississippi Chapter Meeting. Starkville, Mississippi.
+
+#### [2024]{.underline}
+
+- David H. Nabi Memorial Award. Mississippi State University Department of Wildlife, Fisheries & Aquaculture. Starkville, Mississippi.
+
+- Graduate Student Symposium at the Dauphin Island Sea Lab Oral Presentation Honorable Mention. Dauphin Island Sea Lab, Alabama.
+
+- Graduate Student Association Spring Research Symposium Third Place Oral Presentation (Ph.D. level). Mississippi State University, Starkville, Mississippi.
+
+#### [2023]{.underline}
+
+- Graduate Student Association Fall Research Symposium Third Place Oral Presentation (Ph.D. level). Mississippi State University, Starkville, Mississippi.
+
+- Best Student Poster Presentation. American Fisheries Society Mississippi Chapter Meeting, Natchez, Mississippi.
+
+- Graduate Student Association Spring Research Symposium Best Student Poster (Ph.D. level). Mississippi State University, Starkville, Mississippi.
+
+#### [2018]{.underline}
+
+- Indiana University – Purdue University Top 50 Award. Indiana University – Purdue University Fort Wayne, Fort Wayne, Indiana.
+
+- Beverly Hume Memorial Award – “The Effects of Climate Change on Interaction between *Ursus arctos* and *Ursus maritimus*”. College of Arts and Sciences, Indiana University – Purdue University Fort Wayne, Fort Wayne, Indiana.
+
+## Professional Development
+
+------------------------------------------------------------------------
+
+#### [Specialized Training and Workshops Attended]{.underline}
+
+2024 - Adult CPR & AED Certification. USGS Cooperative Research Units: Emergency Care & Safety Institute
+
+2023 - Global Warming I: The Science and Modeling of Climate Change Coursera Certificate
+
+2019 - PFW Office of Graduate Studies Building Your Inclusive Classroom
+
+2018 - PFW Graduate Assistant Workshop
+
+#### [Seminars and Meetings Attended]{.underline}
+
+2024 - Amphibian and Reptile Conservation Meeting. Mississippi Department of Wildlife, Fisheries, and Parks, Museum of Natural History. Jackson, Mississippi.
+
+2023 - Mississippi State University College of Forest Resources Diversity Roundtable Discussion
+
+2022 - Leadership Seminar: Diverse Perspectives
+
+2022 - Leadership Seminar: How Cultural Competency Drives Teamwork
+
+## Service
+
+------------------------------------------------------------------------
+
+### Public Service and Outreach
+
+#### [2025]{.underline}
+
+Chaired selection Committee for 2025 David H. Nabi Memorial Award in Mississippi State University Department of Wildlife, Fisheries & Aquaculture.
+
+Served as mock state legislator for Wildlife, Fisheries & Aquaculture Administration and Communications course. 
+
+#### [2024]{.underline}
+
+Served as evaluator for Summer 2024 Undergraduate Research Symposium.
+
+#### [2023]{.underline}
+
+Presented research and career opportunities in natural resources to underrepresented high school seniors through Students Paving a Road to Knowledge (S.P.A.R.K).
+
+#### [2022-2024]{.underline}
+
+Volunteer semesterly for Mississippi State University Wildlife, Fisheries & Aquaculture Graduate Student Association Adopt-a-Highway cleanup.
+
+#### [2021]{.underline}
+
+Worked community tables for Purdue Fort Wayne Environmental Resources Center Earth Day celebration.
+
+#### [2018]{.underline}
+
+Authored, developed, and produced radio PSAs for Mad Anthony’s Children’s Hope House.
+
+### Service and Support for Scientific Organizations
+
+#### [2022-2023]{.underline}
+
+Assisted Mississippi State University graduate student Joshua Stafford with placing an acoustic sensor array around Eagle Lake, Steele Bayou, and Muddy Bayou, capturing, and implanting acoustic transmitters in silver carp, and active tracking of silver carp. Vicksburg, Mississippi.
+
+#### [2020]{.underline}
+
+Volunteered radio tracking snapping turtles at Eagle Marsh. Little River Wetlands Project. Fort Wayne, Indiana.
+
+#### [2019]{.underline}
+
+Assisted Ball State graduate student Angela Fletcher with small mammal trapping. Fort Wayne, Indiana.
+
+## Professional Memberships
+
+------------------------------------------------------------------------
+
+Society for Freshwater Science 2026-Present
+
+American Fisheries Society. 2021-Present
+
+Indiana Academy of Science. 2019-2021
+
+Society for Ecological Restoration Great Lakes Chapter. 2019-2021
+
+Beta Beta Beta Honor Society. 2017-2021
+
+## Networking
+
+------------------------------------------------------------------------
+
+GitHub: <https://github.com/thedungeonecologist>
+
+OrcID: <https://orcid.org/0009-0002-3581-3944>
+
+Google Scholar: <https://scholar.google.com/citations?user=nojq_iIAAAAJ&hl=en&oi=ao>
+
+ResearchGate: <https://www.researchgate.net/profile/Darren-Shoemaker>
+
+## References
+
+------------------------------------------------------------------------
+
+Professional references available on request.
