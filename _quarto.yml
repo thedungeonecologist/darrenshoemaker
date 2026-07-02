@@ -10,7 +10,8 @@ website:
     right:
       - text: Home
         href: index.qmd
-      - posts.qmd
+      - text: Blog
+        href: posts.qmd
       - text: CV
         href: cv.qmd
       - icon: github
