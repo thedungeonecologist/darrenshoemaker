@@ -18,6 +18,12 @@ website:
         href: https://github.com/thedungeonecologist
       - icon: linkedin
         href: https://www.linkedin.com/in/darrenshoemaker/
+    
+    page-navigation: true
+
+    page-footer:
+      center: "[Darren Shoemaker](https://thedungeonecologist.github.io/darrenshoemaker/) &copy; 2026"
+
 format:
   html:
     theme:
