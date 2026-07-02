@@ -8,7 +8,7 @@
 <title>thedungeonecologist</title>
 <link>https://your-website-url.example.com/posts.html</link>
 <atom:link href="https://your-website-url.example.com/posts.xml" rel="self" type="application/rss+xml"/>
-<description>A blog built with Quarto</description>
+<description>Personal Website for Darren Shoemaker</description>
 <generator>quarto-1.9.38</generator>
 <lastBuildDate>Tue, 24 Feb 2026 05:00:00 GMT</lastBuildDate>
 <item>
