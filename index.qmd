@@ -1,6 +1,9 @@
 ---
 title: "My Links"
 image: profile.jpg
+page-navigation: false
+toc: false
+#sidebar: false
 about:
   template: trestles
   links:
