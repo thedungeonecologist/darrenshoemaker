@@ -4,8 +4,9 @@ project:
 
 website:
   description: "Personal Website for Darren Shoemaker"
-  site-url: https://your-website-url.example.com # you must change this appropriately for RSS feeds to work properly
+  site-url: https://your-website-url.example.com
   title: "thedungeonecologist"
+  
   navbar:
     right:
       - text: Home
@@ -19,10 +20,11 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/darrenshoemaker/
     
-    page-navigation: true
-
-    page-footer:
-      center: "[Darren Shoemaker](https://thedungeonecologist.github.io/darrenshoemaker/) &copy; 2026"
+  page-footer:
+    center: "[Darren Shoemaker](https://thedungeonecologist.github.io/darrenshoemaker/) &copy; 2026"
+    right: "Built with Quarto"
+    
+  page-navigation: true
 
 format:
   html:
