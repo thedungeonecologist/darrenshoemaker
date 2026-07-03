@@ -105,5 +105,272 @@
   <guid>https://your-website-url.example.com/posts/howtowrite/</guid>
   <pubDate>Tue, 24 Feb 2026 05:00:00 GMT</pubDate>
 </item>
+<item>
+  <title>Staying Organized with R Projects</title>
+  <dc:creator>Darren Shoemaker</dc:creator>
+  <link>https://your-website-url.example.com/posts/staying_organized/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This content was originally published as a part of the MSU WFA Coding Club and my tools and process have evolved somewhat since then. However, I stand by the philosophy of this post, and the strategies described here are still a good starting point for beginners looking to be more thoughtful about their data science projects.</p>
+</div>
+</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>One of (in my opinion) the most useful and least-taught skills one can develop is how to stay organized in R. Here, I am going to present my technique for keeping my projects organized. As you read this, keep a few points in mind. This is neither the only nor the best strategy, so if this does not work for you, try something else. The most important thing is an organization system works for you and that you apply it consistently. If you start making exceptions or deviate from your system, you may not be able to find something later.</p>
+<p>Two notes:</p>
+<p>1) This guide will assume some familiarity with .R and .csv files and Windows folder system. If you are using a MacOS, this should translate pretty easily. If you are using a Linux Machine, you probably don’t need this guide.</p>
+<p>2) All of my other coding_club pages will follow this organizational structure, so I recommend reading this one first.</p>
+<section id="why-is-this-so-important" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-this-so-important">Why is this so important?</h3>
+<p>Short answer: It may not be. Decide for yourself if devoting time up front will be worth the time you save down the road.</p>
+<p>Long answer: As you use R more for classes, theses, and projects, you will find yourself making dozens to hundreds of scripts with all the associated data, outputs, and objects associated with each. If you, or better yet, your R environment, knows where to find everything it needs to function, you will save yourself time and headaches when you need to access these again. In academia and science, it is fairly common to step away from a project for months or even years at a time. The more detailed your organizational system, the easier it will be to pick these projects back up.</p>
+</section>
+<section id="step-1-everything-needs-a-home" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-everything-needs-a-home">Step 1: Everything Needs a Home</h2>
+<p>Start by making a folder for all of your R stuff. Everything we do from this point on will happen inside this folder. R is a programming language which means it is very particular about how commands are entered. One aspect of this is that R does not like spaces. Always place an underscore _ or other character between terms. I will literally name this file R_Stuff. You can’t get more descriptive than that. If you like clumsy allegories, call R_Stuff our house.</p>
+</section>
+<section id="step-2-maintaining-a-consistent-folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-maintaining-a-consistent-folder-structure">Step 2: Maintaining a Consistent Folder Structure</h2>
+<p>Start by making a folder inside of R_Stuff. This can be anything, but remember the name can’t have any spaces. The name should also be descriptive. Someone who is not familiar with the folder or its contents (read: you in a couple months) should reasonably be able to guess what the folder contains. Consider this a room inside the house.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/r_stuff.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>So, anyone who clicks on this folder will expect to see files related to a project called organized house.</p>
+<p>Inside R_organized_house, we’re going to make a few more folders. These can also be named anything. You want them to be descriptive enough to make their contents clear, but general enough to reuse for multiple projects. I like, at minimum, including data, output, scripts, and temp folders. Think of these as desks or closets in the room.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/house_folders-02.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Inside data, we’re going to go one step further and add a raw and processed folder. The raw data folder is the junk drawer. We can toss whatever into here without really thinking. The processed folder is tool drawer, which is hopefully more organized. We’ll write cleaned data to this folder.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/house_folders-01.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="step-3-the-r-project-file" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-the-r-project-file">Step 3: The R Project File</h2>
+<p>Finally, are ready to move into R. Begin by opening RStudio. If you feel the need, you can cry a bit. This is a healthy emotional release and R is scary. Once you’re ready, move to the file tab and click New Project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/new_project.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>The R Project is one of the most powerful tools for organization, but rarely mentioned in statistics courses. This is not the fault of the instructors - those courses are already packed with more material than can be reasonably taught. An RStudio project is associated with your working directory and creates a shortcut to open everything in that directory in your RStudio session.</p>
+<p>In the next menu, click Existing Directory. New Directory is also fine, but we already set up our file structure. Version Control is the scary basement. Stay out of the basement.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/existing_directory.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Navigate to the folder you made previously. In our case, this is R_organized_house. Best practice is check open in new session. This is not completely necessary, but you probably don’t want anything from your current environment being used in the new project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/new_project_wizard.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>After you click create project, you’ll see a .Rproj file in the directory you picked.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/Rproj_file.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>The .Rproj file is the foundation of the organization system we’re using here. Whenever you want to work on your project, open Rstudio by clicking on the .Rproj file. In this case, R_organized_house. This will ensure you are working within that project directory, and any files or output you generate will stay in this folder.</p>
+</section>
+<section id="step-4-working-with-scripts-and-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-working-with-scripts-and-data">Step 4: Working with Scripts and Data</h2>
+<p>Once you have a project set up, you’re finally to begin working! A .R script is is probably the most fundamental file type to the R programming language. Any scripts you make will have a .R file extension. To take full advantage of the folder structure we made, we’re going to use the here library. This is a powerful library for collaboration and we will only be scratching the surface of its functionality. Install the package if needed, then load the library.</p>
+<p>The here package automatically sets the working directory to the highest folder in the project. The package begins working as soon as you load the library, but you can also call the here::here() function if you want to set the working directory manually. The function works by looking for a .Rproj file, .gitignore file, and a few others. Conveniently, we have a .Rproj file at the main folder, so the working directory above is set to coding_club. As you are probably working with a different folder name, double that this is set correctly.</p>
+<section id="the-here-library" class="level3">
+<h3 class="anchored" data-anchor-id="the-here-library">The here library</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(here)</span></code></pre></div></div>
+</div>
+<p>Because we set the working directory using here(), we have to use the here() function when reading or writing data. This may seem like an extra step, but I promise will save time in the long run. We will use the famous Iris dataset for this example. Iris is pre-loaded into R, but we will read it as a .csv file from the raw data folder.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read.csv</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">file =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'data/raw'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'iris.csv'</span>))</span></code></pre></div></div>
+</div>
+<p>This is a bit more complicated than the usual read.csv(), so let’s break it down. We’re creating a data object as normal, but we have to tell R where to look for the file since we didn’t use set.wd(). To do this, we add the here() function to the file argument, and tell R that the file is inside the ‘data/raw’ folder. Because the data is in a folder inside a folder, we have to add the / between data and raw to indicate the file path. Finally, we name the file to tell R which file we want assigned to the object ‘data’.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">head</span>(data)</span></code></pre></div></div>
+</div>
+<p>We’re going to make a simple change to the iris dataset for the purposes of this example. First, load the dplyr library and make a modification.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(dplyr)</span>
+<span id="cb4-2"></span>
+<span id="cb4-3">data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> data <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb4-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Species <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'virginica'</span>)</span>
+<span id="cb4-5"></span>
+<span id="cb4-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">head</span>(data)</span></code></pre></div></div>
+</div>
+</section>
+<section id="a-note-on-filtering" class="level3">
+<h3 class="anchored" data-anchor-id="a-note-on-filtering">A Note on Filtering</h3>
+<p>The filter() function may be new so we’ll walk through that. We start with the data object we made earlier, then we’re going to use the pipe operator, &amp;&gt;&amp;. The pipe operator is just a way to tell R to do something and then do something else. Here, we’re telling R to take the data object “and then” apply the filter function. The filter function tells R to take all the Species which are exactly equal ( == ) to virginica, so we make a new data object which only includes virginica.</p>
+</section>
+</section>
+<section id="step-5-using-the-output-and-temp-folders" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-using-the-output-and-temp-folders">Step 5: Using the Output and Temp Folders</h2>
+<p>Let’s go back to the house analogy. We’re still in the same room, the R_organized_house folder, but we want to put the data object somewhere else, maybe taking it out of the junk drawer and putting it somewhere more sensible. To do this, we’re going to use the here() function along with the folder structure we made at the beginning.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">write.csv</span>(data, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">file =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'output'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'virginica_output.csv'</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">row.names =</span> F)</span>
+<span id="cb5-2"></span>
+<span id="cb5-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">write.csv</span>(data, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">file =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'temp'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'virginica_temp.csv'</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">row.names =</span> F)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">write.csv</span>(data, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">file =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'data/processed'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'virginica_processed.csv'</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">row.names =</span> F)</span></code></pre></div></div>
+</div>
+<p>We actually wrote the same file to three different locations. In practice, you probably wouldn’t do this, but we can demonstrate the flexibility of the this approach. Because we’re using the here() function, we don’t need to set the working directory or write the entire file path. We just say that we’re here(). Conveniently, this is the top level folder, so what we’re really telling R is to make a .csv file here, inside either the output, temp, or data/processed folder. Typically, you would write results or tables to the output folder, something more experimental or exploratory to the temp folder, and a finalized, clean to dataset to the processed folder. This approach is also flexible, so you can add folders as needed. Maybe you want a folder for rasters inside of the data folder, or you want to sort your outputs more. Adapt as needed.</p>
+</section>
+<section id="the-next-steps-the-project-template" class="level2">
+<h2 class="anchored" data-anchor-id="the-next-steps-the-project-template">The Next Steps: the Project Template</h2>
+<p>So you’ve made one project, but your next class assignment is coming up and you want to make another folder. To keep the analogy, move to a different room, but that was a lot of effort. We’re going to make a project template to save a few steps. Make a new folder inside of R_Stuff. Mine is named project_template, but pick a name that works for you. I also lead with the digits 01, so the folder is always at the top of the R_Stuff directory.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/staying_organized/images/last_image.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Inside of this folder, make data, output, scripts, and temp folders, or whatever you folders you want in all or most of your projects. These should generally be empty, but if you have many projects which share a dataset, you may want to add these to the data/raw folder. From here, any time you want to make a new project, you can just copy the entire template folder, change the name to your new project, and then make a project with the new folder as the directory. I go one step further and also keep a read_data script in the scripts folder of the template, which saves me typing a few lines.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#' ---</span></span>
+<span id="cb6-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#' title: "Read Data"</span></span>
+<span id="cb6-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#' author: "Darren Shoemaker"</span></span>
+<span id="cb6-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#' ---</span></span>
+<span id="cb6-5"></span>
+<span id="cb6-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Libraries </span></span>
+<span id="cb6-7"></span>
+<span id="cb6-8"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(here)</span>
+<span id="cb6-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb6-10"></span>
+<span id="cb6-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#read in data ----</span></span>
+<span id="cb6-12"></span>
+<span id="cb6-13">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read.csv</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">file =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'data/raw'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>))</span></code></pre></div></div>
+</div>
+</section>
+<section id="congratulations" class="level2">
+<h2 class="anchored" data-anchor-id="congratulations">Congratulations!</h2>
+<p>This is a basic rundown of how I keep my R projects organized. I hope this was helpful! If something is missing or unclear, please let me know. I want to make these as practical and useful as possible, so I appreciate your feedback. Now go do some great science!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>coding</category>
+  <category>organization</category>
+  <guid>https://your-website-url.example.com/posts/staying_organized/</guid>
+  <pubDate>Mon, 16 Sep 2024 04:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
