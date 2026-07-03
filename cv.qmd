@@ -58,10 +58,6 @@ embed-resources: true
 
 7.  Ahmad, H, M Abdallah, F Jose, HE Elzain, S Bhuyan, **DJ Shoemaker**, S Selvam. 2023. Evaluation and mapping of predicted future land use changes using hybrid models in a coastal area. Ecological Informatics. DOI: <https://doi.org/10.1016/j.ecoinf.2023.102324>
 
-#### [Manuscripts in Review]{.underline}
-
-1.  **Shoemaker, DJ**, PC Smiley, RB Gillespie. Evaluating the influence of climate and hydrologic variables on fish community in agricultural headwater streams in the Midwestern United States. Freshwater Biology.
-
 #### [Manuscripts in Prep]{.underline}
 
 1.  **Shoemaker, DJ**, H Ahmad, LE Miranda. Classifying Reservoir Impairment from Climate Change using Expert Opinion and Machine Learning.
