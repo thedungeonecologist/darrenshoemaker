@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "*.pdf"
 
 website:
   description: "Personal Website for Darren Shoemaker"
