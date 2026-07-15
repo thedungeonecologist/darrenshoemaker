@@ -11,7 +11,7 @@ resources:
   - "Github and RStudio.pdf"
 ---
 
-These slides are from an introductory workshop I prepared for my  lab at the University at Buffalo demonstrating how to use Git and GitHub with RStudio. 
+Slides from an introductory workshop I prepared for my lab at the University at Buffalo demonstrating how to use Git and GitHub with RStudio. 
 
 ```{=html}
 <iframe src="Github and RStudio.pdf" width="100%" height="600px" style="border: none;">
