@@ -1,0 +1,12 @@
+{
+  "hash": "1a01bba9ea9ef1a390651a4fa705d426",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Integrating GitHub and RStudio\"\nauthor: \"Darren Shoemaker\"\ndate: \"09/08/2025\"\ncategories:\n  - collaboration\n  - technical\nformat: html\ntoc: true\nembed-resources: true\nresources:\n  - \"Github and RStudio.pdf\"\n---\n\n```{html}\n<iframe src=\"Github and RStudio.pdf\" width=\"100%\" height=\"600px\" style=\"border: none;\">\n  <p>Your browser does not support PDFs. <a href=\"Github and RStudio.pdf\">Download the PDF</a>.</p>\n</iframe>\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

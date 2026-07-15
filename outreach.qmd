@@ -1,0 +1,16 @@
+---
+title: "Outreach"
+listing:
+  contents: outreach
+  fields: [image, date, title, description, author, categories]
+  feed: true
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+word-count: true
+reading-time: true
+page-layout: full
+title-block-banner: true
+---

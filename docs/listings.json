@@ -5,5 +5,11 @@
       "/posts/howtowrite/index.html",
       "/posts/staying_organized/index.html"
     ]
+  },
+  {
+    "listing": "/outreach.html",
+    "items": [
+      "/outreach/github_rstudio/index.html"
+    ]
   }
 ]
