@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Blog",
     "section": "",
-    "text": "How to Start a Journal Article\n\n\n\nwriting\n\nacademia\n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nDarren Shoemaker\n\n\n\n\n\n\n\n\n\n\n\n\nStaying Organized with R Projects\n\n\n\nR\n\ncoding\n\norganization\n\n\n\n\n\n\n\n\n\nSep 16, 2024\n\n\nDarren Shoemaker\n\n\n\n\n\nNo matching items"
+    "text": "How to Start a Journal Article\n\n\n\nwriting\n\nacademia\n\n\n\n\n\n\n\n\n\nFeb 24, 2026\n\n\nDarren Shoemaker\n\n\n\n\n\n\n\n\n\n\n\n\nCoding for Sharing and Collaboration\n\n\n\ncoding\n\ncollaboration\n\n\n\n\n\n\n\n\n\nSep 26, 2024\n\n\nDarren Shoemaker\n\n\n\n\n\n\n\n\n\n\n\n\nStaying Organized with R Projects\n\n\n\nR\n\ncoding\n\norganization\n\n\n\n\n\n\n\n\n\nSep 16, 2024\n\n\nDarren Shoemaker\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/howtowrite/index.html",
@@ -201,5 +201,68 @@
     "title": "Projected Reservoir Impairment in the Conterminous United States following Three Climate Change Scenarios",
     "section": "",
     "text": "Slides from my presentation at the 2025 meeting of the Mississippi State Chapter of the American Fisheries Society.\n\n  &lt;p&gt;Your browser does not support PDFs. &lt;a href=\"ms_afs_2025_v1.pdf\"&gt;Download the PDF&lt;/a&gt;.&lt;/p&gt;"
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html",
+    "href": "posts/codingcollaboration/index.html",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "",
+    "text": "NoteNote\n\n\n\nThis content was originally published as a part of the MSU WFA Coding Club and my tools and process have evolved somewhat since then. However, I stand by the philosophy of this post, and the strategies described here are still a good starting point for beginners looking to be more thoughtful about their data science projects."
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#working-in-projects",
+    "href": "posts/codingcollaboration/index.html#working-in-projects",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[1] Working in Projects",
+    "text": "[1] Working in Projects\nThe easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can read here. Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.\n\n\n\n\n\nProjects are helpful for collaboration because the entire project can be shared as a .zip file. I personally use the program 7-zip to create zip files, but Windows has a native function. Right click on the project directory and click Add to [PROJECT_NAME.zip]. I am going to use R_organized_house from the staying organized guide as an example.\n\n\n\n\n\nYou should end up with a .zip archive with the same name as your project directory.\n\n\n\n\n\nThis is the folder you will share with your collaborators. Remember they will need to unzip the folder before they can start working with your project."
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#packages-and-libraries",
+    "href": "posts/codingcollaboration/index.html#packages-and-libraries",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[2] Packages and Libraries",
+    "text": "[2] Packages and Libraries\nThe .R script file you actually them to run should be inside the zipped archive. Once they unzip the folder, they can open the .Rproj file in their own local RStudio environment.\nThis guide requires the here() library. As with all libraries, they have to be loaded before we can use the functions in them. You have almost certainly used the line library([PACKAGE_NAME|) in a script before."
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#libraries",
+    "href": "posts/codingcollaboration/index.html#libraries",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "Libraries",
+    "text": "Libraries\nBegin every script with a code chunk which loads the necessary libraries. This will ensure whoever runs the script after you will be able to access the functions you use.\n\n# Libraries\n\nlibrary(here)\n\nDepending on if you’ve used here() before, you may see the following error.\n\n\n\n\n\nFor the sake of argument, we’ll assume our friend in the Arctic has not used the here() library and does receive the error. This means the script has already failed before we have begun any analysis or even loaded our data.\nThis means the user has not installed the package. This brings us to a crossroads so I’m going to get on a soapbox: As a general rule, I do not want my scripts to modify the end users’ computer. This means I do not want to install new software or write new files. If your collaborator trusts you, and I hope they do, they probably won’t care, but I think this is best practice from a coding, data management, and privacy perspective. However, without installing the package, the script won’t work.\nMy workaround is to provide the installation code but commented out. The user can use their own due diligence and review if they want to install the package, and that the install.packages() function will be skipped over if they already have the package and installation is unnecessary. This will look something like the following code chunk.\n\n# Install Packages\n\n#install.packages('here')\n#install.packages('ggplot2')\n\n# Libraries \n\nlibrary(here)\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#reading-in-data",
+    "href": "posts/codingcollaboration/index.html#reading-in-data",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[3] Reading in Data",
+    "text": "[3] Reading in Data\nOnce our friend has loaded the appropriate libraries, they need to access any data read in by the script. A common trap is to use the function setwd() to access files.\n\n\n\n\n\nThis works fine on my computer. The issue is E: is my external hard drive, R_Stuff keeps backups of my work, and coding_club is a local directory I use for the website. My friend has none of these folders! This means any script which uses this line will only work exactly on my computer and if I don’t change anything about my folders. Unlikely!\nThe here() package is my preferred method for accessing a working directory in a collaborative setting. This package works by automatically (magically) setting the working directory to the highest folder associated with the R Project. This works by looking for .Rproj, .gitignore, or another high-level file which applies to the entire project. This should occur as soon as the library is loaded, but you can double check by calling the here::here() function.\n\nhere::here()\n\nThis function will identify where the term “here” is referring to. In my case, this is the coding_club folder I used to build this website.\nFor the purposes of this example, I am going to read in the filtered virginca_processed .csv which we made in the Staying Organized guide. Another good practice is to use head(), str(), or your preferred summary function to make sure the dataframe you read in looks like what you expect.\n\ndat &lt;- read.csv(file = here('posts/codingcollaboration/data', 'virginica_processed.csv'))\nhead(dat)\n\nThis looks like the iris dataset filtered to only include the species virginica. This is what I expected, so we’re ready to move on."
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#using-the-data",
+    "href": "posts/codingcollaboration/index.html#using-the-data",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[4] Using the Data",
+    "text": "[4] Using the Data\nIf we have done everything described above correctly, our friend in the Arctic should now have the filtered iris dataframe, named dat, in their R environment. Sharing the data and files associated with an R script or project is probably 90% of the battle, so take a deep breath.\nAs an example, we’re going to make a couple plots using these data in the ggplot package, but substitute any analysis you want to share.\n\nplot_1 &lt;- ggplot2::ggplot(data = dat, mapping = aes(x = Petal.Width, y = Petal.Length, fill = Species)) +\n  geom_point(color = 'blue') +\n  xlab('Petal Width') +\n  ylab('Petal Length') +\n  ggtitle('Length and Width of Virginica Petals in Sample')\n\nplot_1\n\nplot_2 &lt;- ggplot2::ggplot(data = dat, mapping = aes(x = Sepal.Width, y = Sepal.Length, fill = Species)) +\n  geom_point(color = 'blue') +\n  xlab('Sepal Width') +\n  ylab('Sepal Length') +\n  ggtitle('Length and Width of Virginica Sepals in Sample')\n\n\nplot_2"
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#saving-outputs",
+    "href": "posts/codingcollaboration/index.html#saving-outputs",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[5] Saving Outputs",
+    "text": "[5] Saving Outputs\nSimilarly to installing packages, I don’t like writing new files to another user’s computer. Still, many researchers will want to be able to access output files after running a script. I always try to provide the code to get the output, but again commented out. You may just want to reach out to your collaborators to clarify their preferences if the commented codes are annoying.\n\n#ggsave(plot_1, file = here('output', 'plot_1.png'), dpi = 300)\n#ggsave(plot_2, file = here('output', 'plot_2.png'), dpi = 300)\n\nAgain, the here() function lets us write the files to the output folder contained in the project directory. This means the images are written to the same place no matter who runs the script."
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#general-best-practices-for-shared-scripts",
+    "href": "posts/codingcollaboration/index.html#general-best-practices-for-shared-scripts",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[6] General Best Practices for Shared Scripts",
+    "text": "[6] General Best Practices for Shared Scripts\nCongratulations! If you’ve made it this far, you should be able to write a script anyone can run. This section just adds a few extra tips which may be helpful. I will update this section relatively frequently so feel free to share anything you want added.\n\n1. Comment Thoroughly\nJust because your friend is able to run the script, it may not be immediately clear what each section of the script is doing. I recommend adding comments to the code to guide them through what each major section does. This will also be helpful to you in the future if you have to revisit an old project.\n\n# Read data\n\n## Generate plots\n\n# Mixed effects modeling for fish abundance ----\n\n#' The output from this model suggests water temperature has a positive effect on fish abundance. \n\nThere are a few strategies to commenting. You don’t need to write a research paper in the script, but some guidance can clarify complex code. Different types of comments only marginally change the script, but can affect the output if you knit the script into a different document.\nThe number of # symbols indicate the level of header. Incidentally, the Introduction header of this page uses #, each section uses ##, and the subsections in [6] use ###.\nAdding the four minus signs after a comment will turn that into a section which can be accessed from the outline button in the top right of the script window. This is useful if your script is very long.\nThe apostrophe after the last comment indicates that this is a roxygen comment. This won’t change anything here, but indicates the comment should be treated as plain text in an HTML or PDF document.\n\n\n2. Call Functions Explicitly\nYou may have noticed the double colon operators before some of the functions above.\n::\nThis operator is used before calling a function to explicitly define the package namespace of that function. In our case, we used the following.\n\nggplot2::ggplot()\nhere::here()\n\nThis operator indicates to R that we want to use the ggplot() function from the ggplot2 package. In some cases, multiple functions from different packages may have the same name. This means that one will mask the other. R will provide a warning when you load libraries which share package names, but this is easy to miss.\nWe probably don’t know every package our friend has installed on their machine. By using the :: operator, we can make sure every function is running from the correct package. This may also save some headache if you accidentally mask a function down the road."
+  },
+  {
+    "objectID": "posts/codingcollaboration/index.html#sharing-the-project",
+    "href": "posts/codingcollaboration/index.html#sharing-the-project",
+    "title": "Coding for Sharing and Collaboration",
+    "section": "[7] Sharing the Project",
+    "text": "[7] Sharing the Project\nWith that, you should be prepared to share your analysis with your committee or collaborators! Hopefully they respond in a timely manner. Once you have everything in a .zip archive, you can share through email, a thumb drive, OneDrive/cloud service, or maybe even GitHub. As always, thank you for reading and please reach out with any feedback!"
   }
 ]

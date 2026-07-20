@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Darren Shoemaker">
-<meta name="dcterms.date" content="2024-09-16">
+<meta name="dcterms.date" content="2024-09-26">
 
-<title>Staying Organized with R Projects – thedungeonecologist</title>
+<title>Coding for Sharing and Collaboration – thedungeonecologist</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -166,11 +166,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Staying Organized with R Projects</h1>
+      <h1 class="title">Coding for Sharing and Collaboration</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">R</div>
                 <div class="quarto-category">coding</div>
-                <div class="quarto-category">organization</div>
+                <div class="quarto-category">collaboration</div>
               </div>
                   </div>
   </div>
@@ -188,7 +187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 16, 2024</p>
+        <p class="date">September 26, 2024</p>
       </div>
     </div>
     
@@ -206,18 +205,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#why-is-this-so-important" id="toc-why-is-this-so-important" class="nav-link" data-scroll-target="#why-is-this-so-important">Why is this so important?</a></li>
-  <li><a href="#step-1-everything-needs-a-home" id="toc-step-1-everything-needs-a-home" class="nav-link" data-scroll-target="#step-1-everything-needs-a-home">Step 1: Everything Needs a Home</a></li>
-  <li><a href="#step-2-maintaining-a-consistent-folder-structure" id="toc-step-2-maintaining-a-consistent-folder-structure" class="nav-link" data-scroll-target="#step-2-maintaining-a-consistent-folder-structure">Step 2: Maintaining a Consistent Folder Structure</a></li>
-  <li><a href="#step-3-the-r-project-file" id="toc-step-3-the-r-project-file" class="nav-link" data-scroll-target="#step-3-the-r-project-file">Step 3: The R Project File</a></li>
-  <li><a href="#step-4-working-with-scripts-and-data" id="toc-step-4-working-with-scripts-and-data" class="nav-link" data-scroll-target="#step-4-working-with-scripts-and-data">Step 4: Working with Scripts and Data</a>
+  <li><a href="#working-in-projects" id="toc-working-in-projects" class="nav-link" data-scroll-target="#working-in-projects">[1] Working in Projects</a></li>
+  <li><a href="#packages-and-libraries" id="toc-packages-and-libraries" class="nav-link" data-scroll-target="#packages-and-libraries">[2] Packages and Libraries</a></li>
+  <li><a href="#libraries" id="toc-libraries" class="nav-link" data-scroll-target="#libraries">Libraries</a></li>
+  <li><a href="#reading-in-data" id="toc-reading-in-data" class="nav-link" data-scroll-target="#reading-in-data">[3] Reading in Data</a></li>
+  <li><a href="#using-the-data" id="toc-using-the-data" class="nav-link" data-scroll-target="#using-the-data">[4] Using the Data</a></li>
+  <li><a href="#saving-outputs" id="toc-saving-outputs" class="nav-link" data-scroll-target="#saving-outputs">[5] Saving Outputs</a></li>
+  <li><a href="#general-best-practices-for-shared-scripts" id="toc-general-best-practices-for-shared-scripts" class="nav-link" data-scroll-target="#general-best-practices-for-shared-scripts">[6] General Best Practices for Shared Scripts</a>
   <ul class="collapse">
-  <li><a href="#the-here-library" id="toc-the-here-library" class="nav-link" data-scroll-target="#the-here-library">The here library</a></li>
-  <li><a href="#a-note-on-filtering" id="toc-a-note-on-filtering" class="nav-link" data-scroll-target="#a-note-on-filtering">A Note on Filtering</a></li>
+  <li><a href="#comment-thoroughly" id="toc-comment-thoroughly" class="nav-link" data-scroll-target="#comment-thoroughly">1. Comment Thoroughly</a></li>
+  <li><a href="#call-functions-explicitly" id="toc-call-functions-explicitly" class="nav-link" data-scroll-target="#call-functions-explicitly">2. Call Functions Explicitly</a></li>
   </ul></li>
-  <li><a href="#step-5-using-the-output-and-temp-folders" id="toc-step-5-using-the-output-and-temp-folders" class="nav-link" data-scroll-target="#step-5-using-the-output-and-temp-folders">Step 5: Using the Output and Temp Folders</a></li>
-  <li><a href="#the-next-steps-the-project-template" id="toc-the-next-steps-the-project-template" class="nav-link" data-scroll-target="#the-next-steps-the-project-template">The Next Steps: the Project Template</a></li>
-  <li><a href="#congratulations" id="toc-congratulations" class="nav-link" data-scroll-target="#congratulations">Congratulations!</a></li>
+  <li><a href="#sharing-the-project" id="toc-sharing-the-project" class="nav-link" data-scroll-target="#sharing-the-project">[7] Sharing the Project</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -244,142 +243,154 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>One of (in my opinion) the most useful and least-taught skills one can develop is how to stay organized in R. Here, I am going to present my technique for keeping my projects organized. As you read this, keep a few points in mind. This is neither the only nor the best strategy, so if this does not work for you, try something else. The most important thing is an organization system works for you and that you apply it consistently. If you start making exceptions or deviate from your system, you may not be able to find something later.</p>
-<p>Two notes:</p>
-<p>1) This guide will assume some familiarity with .R and .csv files and Windows folder system. If you are using a MacOS, this should translate pretty easily. If you are using a Linux Machine, you probably don’t need this guide.</p>
-<p>2) All of my other coding_club pages will follow this organizational structure, so I recommend reading this one first.</p>
-<section id="why-is-this-so-important" class="level3">
-<h3 class="anchored" data-anchor-id="why-is-this-so-important">Why is this so important?</h3>
-<p>Short answer: It may not be. Decide for yourself if devoting time up front will be worth the time you save down the road.</p>
-<p>Long answer: As you use R more for classes, theses, and projects, you will find yourself making dozens to hundreds of scripts with all the associated data, outputs, and objects associated with each. If you, or better yet, your R environment, knows where to find everything it needs to function, you will save yourself time and headaches when you need to access these again. In academia and science, it is fairly common to step away from a project for months or even years at a time. The more detailed your organizational system, the easier it will be to pick these projects back up.</p>
+<p>Today we’re going to discuss how to share code with your committee or collaborators. An unfortunately frequent event during graduate school is to spend weeks or months developing a script, share that script with your committee member, and the script fails when they try to run it. What happened? It worked perfectly yesterday! As always, my solution is not the only solution, so if you find something which works better, absolutely do that (and maybe tell me so I don’t keep doing stuff the hard way). The idea is that your collaborator(s) should be able to simply click run on a .R script and obtain the same output as you.</p>
+<p>A useful heuristic I like is to ask myself, “Would my friend be able to run my script on their laptop at our Arctic research base?” If the answer is yes*, you’re already done, but if you’re not sure, keep reading!</p>
+<p>*If you are working with extremely large files or computationally intensive tasks, their laptop may not be able to run the script anyway, so assume a relatively normal analysis.</p>
+<section id="working-in-projects" class="level2">
+<h2 class="anchored" data-anchor-id="working-in-projects">[1] Working in Projects</h2>
+<p>The easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can <a href="https://thedungeonecologist.github.io/darrenshoemaker/posts/codingcollaboration/index.html">read here</a>. Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/house_folders.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Projects are helpful for collaboration because the entire project can be shared as a .zip file. I personally use the program 7-zip to create zip files, but Windows has a native function. Right click on the project directory and click Add to [PROJECT_NAME.zip]. I am going to use R_organized_house from the staying organized guide as an example.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/zip_files.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>You should end up with a .zip archive with the same name as your project directory.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/zipped_house.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>This is the folder you will share with your collaborators. Remember they will need to unzip the folder before they can start working with your project.</p>
 </section>
-<section id="step-1-everything-needs-a-home" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-everything-needs-a-home">Step 1: Everything Needs a Home</h2>
-<p>Start by making a folder for all of your R stuff. Everything we do from this point on will happen inside this folder. R is a programming language which means it is very particular about how commands are entered. One aspect of this is that R does not like spaces. Always place an underscore _ or other character between terms. I will literally name this file R_Stuff. You can’t get more descriptive than that. If you like clumsy allegories, call R_Stuff our house.</p>
+<section id="packages-and-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="packages-and-libraries">[2] Packages and Libraries</h2>
+<p>The .R script file you actually them to run should be inside the zipped archive. Once they unzip the folder, they can open the .Rproj file in their own local RStudio environment.</p>
+<p>This guide requires the here() library. As with all libraries, they have to be loaded before we can use the functions in them. You have almost certainly used the line library([PACKAGE_NAME|) in a script before.</p>
 </section>
-<section id="step-2-maintaining-a-consistent-folder-structure" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-maintaining-a-consistent-folder-structure">Step 2: Maintaining a Consistent Folder Structure</h2>
-<p>Start by making a folder inside of R_Stuff. This can be anything, but remember the name can’t have any spaces. The name should also be descriptive. Someone who is not familiar with the folder or its contents (read: you in a couple months) should reasonably be able to guess what the folder contains. Consider this a room inside the house.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/r_stuff.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>So, anyone who clicks on this folder will expect to see files related to a project called organized house.</p>
-<p>Inside R_organized_house, we’re going to make a few more folders. These can also be named anything. You want them to be descriptive enough to make their contents clear, but general enough to reuse for multiple projects. I like, at minimum, including data, output, scripts, and temp folders. Think of these as desks or closets in the room.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/house_folders-02.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Inside data, we’re going to go one step further and add a raw and processed folder. The raw data folder is the junk drawer. We can toss whatever into here without really thinking. The processed folder is tool drawer, which is hopefully more organized. We’ll write cleaned data to this folder.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/house_folders-01.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="step-3-the-r-project-file" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-the-r-project-file">Step 3: The R Project File</h2>
-<p>Finally, are ready to move into R. Begin by opening RStudio. If you feel the need, you can cry a bit. This is a healthy emotional release and R is scary. Once you’re ready, move to the file tab and click New Project.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/new_project.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>The R Project is one of the most powerful tools for organization, but rarely mentioned in statistics courses. This is not the fault of the instructors - those courses are already packed with more material than can be reasonably taught. An RStudio project is associated with your working directory and creates a shortcut to open everything in that directory in your RStudio session.</p>
-<p>In the next menu, click Existing Directory. New Directory is also fine, but we already set up our file structure. Version Control is the scary basement. Stay out of the basement.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/existing_directory.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Navigate to the folder you made previously. In our case, this is R_organized_house. Best practice is check open in new session. This is not completely necessary, but you probably don’t want anything from your current environment being used in the new project.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/new_project_wizard.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>After you click create project, you’ll see a .Rproj file in the directory you picked.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Rproj_file.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>The .Rproj file is the foundation of the organization system we’re using here. Whenever you want to work on your project, open Rstudio by clicking on the .Rproj file. In this case, R_organized_house. This will ensure you are working within that project directory, and any files or output you generate will stay in this folder.</p>
-</section>
-<section id="step-4-working-with-scripts-and-data" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-working-with-scripts-and-data">Step 4: Working with Scripts and Data</h2>
-<p>Once you have a project set up, you’re finally to begin working! A .R script is is probably the most fundamental file type to the R programming language. Any scripts you make will have a .R file extension. To take full advantage of the folder structure we made, we’re going to use the here library. This is a powerful library for collaboration and we will only be scratching the surface of its functionality. Install the package if needed, then load the library.</p>
-<p>The here package automatically sets the working directory to the highest folder in the project. The package begins working as soon as you load the library, but you can also call the here::here() function if you want to set the working directory manually. The function works by looking for a .Rproj file, .gitignore file, and a few others. Conveniently, we have a .Rproj file at the main folder, so the working directory above is set to coding_club. As you are probably working with a different folder name, double that this is set correctly.</p>
-<section id="the-here-library" class="level3">
-<h3 class="anchored" data-anchor-id="the-here-library">The here library</h3>
+<section id="libraries" class="level2">
+<h2 class="anchored" data-anchor-id="libraries">Libraries</h2>
+<p>Begin every script with a code chunk which loads the necessary libraries. This will ensure whoever runs the script after you will be able to access the functions you use.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Because we set the working directory using here(), we have to use the here() function when reading or writing data. This may seem like an extra step, but I promise will save time in the long run. We will use the famous Iris dataset for this example. Iris is pre-loaded into R, but we will read it as a .csv file from the raw data folder.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">here</span>(<span class="st">'data/raw'</span>, <span class="st">'iris.csv'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>This is a bit more complicated than the usual read.csv(), so let’s break it down. We’re creating a data object as normal, but we have to tell R where to look for the file since we didn’t use set.wd(). To do this, we add the here() function to the file argument, and tell R that the file is inside the ‘data/raw’ folder. Because the data is in a folder inside a folder, we have to add the / between data and raw to indicate the file path. Finally, we name the file to tell R which file we want assigned to the object ‘data’.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>We’re going to make a simple change to the iris dataset for the purposes of this example. First, load the dplyr library and make a modification.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Species <span class="sc">==</span> <span class="st">'virginica'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="a-note-on-filtering" class="level3">
-<h3 class="anchored" data-anchor-id="a-note-on-filtering">A Note on Filtering</h3>
-<p>The filter() function may be new so we’ll walk through that. We start with the data object we made earlier, then we’re going to use the pipe operator, &amp;&gt;&amp;. The pipe operator is just a way to tell R to do something and then do something else. Here, we’re telling R to take the data object “and then” apply the filter function. The filter function tells R to take all the Species which are exactly equal ( == ) to virginica, so we make a new data object which only includes virginica.</p>
-</section>
-</section>
-<section id="step-5-using-the-output-and-temp-folders" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-using-the-output-and-temp-folders">Step 5: Using the Output and Temp Folders</h2>
-<p>Let’s go back to the house analogy. We’re still in the same room, the R_organized_house folder, but we want to put the data object somewhere else, maybe taking it out of the junk drawer and putting it somewhere more sensible. To do this, we’re going to use the here() function along with the folder structure we made at the beginning.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(data, <span class="at">file =</span> <span class="fu">here</span>(<span class="st">'output'</span>, <span class="st">'virginica_output.csv'</span>), <span class="at">row.names =</span> F)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(data, <span class="at">file =</span> <span class="fu">here</span>(<span class="st">'temp'</span>, <span class="st">'virginica_temp.csv'</span>), <span class="at">row.names =</span> F)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(data, <span class="at">file =</span> <span class="fu">here</span>(<span class="st">'data/processed'</span>, <span class="st">'virginica_processed.csv'</span>), <span class="at">row.names =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>We actually wrote the same file to three different locations. In practice, you probably wouldn’t do this, but we can demonstrate the flexibility of the this approach. Because we’re using the here() function, we don’t need to set the working directory or write the entire file path. We just say that we’re here(). Conveniently, this is the top level folder, so what we’re really telling R is to make a .csv file here, inside either the output, temp, or data/processed folder. Typically, you would write results or tables to the output folder, something more experimental or exploratory to the temp folder, and a finalized, clean to dataset to the processed folder. This approach is also flexible, so you can add folders as needed. Maybe you want a folder for rasters inside of the data folder, or you want to sort your outputs more. Adapt as needed.</p>
-</section>
-<section id="the-next-steps-the-project-template" class="level2">
-<h2 class="anchored" data-anchor-id="the-next-steps-the-project-template">The Next Steps: the Project Template</h2>
-<p>So you’ve made one project, but your next class assignment is coming up and you want to make another folder. To keep the analogy, move to a different room, but that was a lot of effort. We’re going to make a project template to save a few steps. Make a new folder inside of R_Stuff. Mine is named project_template, but pick a name that works for you. I also lead with the digits 01, so the folder is always at the top of the R_Stuff directory.</p>
+<p>Depending on if you’ve used here() before, you may see the following error.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/last_image.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/no_here.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Inside of this folder, make data, output, scripts, and temp folders, or whatever you folders you want in all or most of your projects. These should generally be empty, but if you have many projects which share a dataset, you may want to add these to the data/raw folder. From here, any time you want to make a new project, you can just copy the entire template folder, change the name to your new project, and then make a project with the new folder as the directory. I go one step further and also keep a read_data script in the scripts folder of the template, which saves me typing a few lines.</p>
+<p>For the sake of argument, we’ll assume our friend in the Arctic has not used the here() library and does receive the error. This means the script has already failed before we have begun any analysis or even loaded our data.</p>
+<p>This means the user has not installed the package. This brings us to a crossroads so I’m going to get on a soapbox: As a general rule, I do not want my scripts to modify the end users’ computer. This means I do not want to install new software or write new files. If your collaborator trusts you, and I hope they do, they probably won’t care, but I think this is best practice from a coding, data management, and privacy perspective. However, without installing the package, the script won’t work.</p>
+<p>My workaround is to provide the installation code but commented out. The user can use their own due diligence and review if they want to install the package, and that the install.packages() function will be skipped over if they already have the package and installation is unnecessary. This will look something like the following code chunk.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' ---</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' title: "Read Data"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' author: "Darren Shoemaker"</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' ---</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Libraries </span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#read in data ----</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">here</span>(<span class="st">'data/raw'</span>, <span class="st">''</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install Packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages('here')</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages('ggplot2')</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Libraries </span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="congratulations" class="level2">
-<h2 class="anchored" data-anchor-id="congratulations">Congratulations!</h2>
-<p>This is a basic rundown of how I keep my R projects organized. I hope this was helpful! If something is missing or unclear, please let me know. I want to make these as practical and useful as possible, so I appreciate your feedback. Now go do some great science!</p>
+<section id="reading-in-data" class="level2">
+<h2 class="anchored" data-anchor-id="reading-in-data">[3] Reading in Data</h2>
+<p>Once our friend has loaded the appropriate libraries, they need to access any data read in by the script. A common trap is to use the function setwd() to access files.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/setwd.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>This works fine on my computer. The issue is E: is my external hard drive, R_Stuff keeps backups of my work, and coding_club is a local directory I use for the website. My friend has none of these folders! This means any script which uses this line will only work exactly on my computer and if I don’t change anything about my folders. Unlikely!</p>
+<p>The here() package is my preferred method for accessing a working directory in a collaborative setting. This package works by automatically (magically) setting the working directory to the highest folder associated with the R Project. This works by looking for .Rproj, .gitignore, or another high-level file which applies to the entire project. This should occur as soon as the library is loaded, but you can double check by calling the here::here() function.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>here<span class="sc">::</span><span class="fu">here</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This function will identify where the term “here” is referring to. In my case, this is the coding_club folder I used to build this website.</p>
+<p>For the purposes of this example, I am going to read in the filtered virginca_processed .csv which we made in the Staying Organized guide. Another good practice is to use head(), str(), or your preferred summary function to make sure the dataframe you read in looks like what you expect.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">here</span>(<span class="st">'posts/codingcollaboration/data'</span>, <span class="st">'virginica_processed.csv'</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This looks like the iris dataset filtered to only include the species <em>virginica</em>. This is what I expected, so we’re ready to move on.</p>
+</section>
+<section id="using-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-data">[4] Using the Data</h2>
+<p>If we have done everything described above correctly, our friend in the Arctic should now have the filtered iris dataframe, named dat, in their R environment. Sharing the data and files associated with an R script or project is probably 90% of the battle, so take a deep breath.</p>
+<p>As an example, we’re going to make a couple plots using these data in the ggplot package, but substitute any analysis you want to share.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plot_1 <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(<span class="at">data =</span> dat, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Petal.Width, <span class="at">y =</span> Petal.Length, <span class="at">fill =</span> Species)) <span class="sc">+</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">'blue'</span>) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">'Petal Width'</span>) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">'Petal Length'</span>) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">'Length and Width of Virginica Petals in Sample'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>plot_1</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plot_2 <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(<span class="at">data =</span> dat, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Width, <span class="at">y =</span> Sepal.Length, <span class="at">fill =</span> Species)) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">'blue'</span>) <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">'Sepal Width'</span>) <span class="sc">+</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">'Sepal Length'</span>) <span class="sc">+</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">'Length and Width of Virginica Sepals in Sample'</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>plot_2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="saving-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="saving-outputs">[5] Saving Outputs</h2>
+<p>Similarly to installing packages, I don’t like writing new files to another user’s computer. Still, many researchers will want to be able to access output files after running a script. I always try to provide the code to get the output, but again commented out. You may just want to reach out to your collaborators to clarify their preferences if the commented codes are annoying.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ggsave(plot_1, file = here('output', 'plot_1.png'), dpi = 300)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#ggsave(plot_2, file = here('output', 'plot_2.png'), dpi = 300)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Again, the here() function lets us write the files to the output folder contained in the project directory. This means the images are written to the same place no matter who runs the script.</p>
+</section>
+<section id="general-best-practices-for-shared-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="general-best-practices-for-shared-scripts">[6] General Best Practices for Shared Scripts</h2>
+<p>Congratulations! If you’ve made it this far, you should be able to write a script anyone can run. This section just adds a few extra tips which may be helpful. I will update this section relatively frequently so feel free to share anything you want added.</p>
+<section id="comment-thoroughly" class="level3">
+<h3 class="anchored" data-anchor-id="comment-thoroughly">1. Comment Thoroughly</h3>
+<p>Just because your friend is able to run the script, it may not be immediately clear what each section of the script is doing. I recommend adding comments to the code to guide them through what each major section does. This will also be helpful to you in the future if you have to revisit an old project.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read data</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Generate plots</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Mixed effects modeling for fish abundance ----</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#' The output from this model suggests water temperature has a positive effect on fish abundance. </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>There are a few strategies to commenting. You don’t need to write a research paper in the script, but some guidance can clarify complex code. Different types of comments only marginally change the script, but can affect the output if you knit the script into a different document.</p>
+<p>The number of # symbols indicate the level of header. Incidentally, the Introduction header of this page uses #, each section uses ##, and the subsections in [6] use ###.</p>
+<p>Adding the four minus signs after a comment will turn that into a section which can be accessed from the outline button in the top right of the script window. This is useful if your script is very long.</p>
+<p>The apostrophe after the last comment indicates that this is a roxygen comment. This won’t change anything here, but indicates the comment should be treated as plain text in an HTML or PDF document.</p>
+</section>
+<section id="call-functions-explicitly" class="level3">
+<h3 class="anchored" data-anchor-id="call-functions-explicitly">2. Call Functions Explicitly</h3>
+<p>You may have noticed the double colon operators before some of the functions above.</p>
+<p>::</p>
+<p>This operator is used before calling a function to explicitly define the package namespace of that function. In our case, we used the following.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ggplot2<span class="sc">::</span><span class="fu">ggplot</span>()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>here<span class="sc">::</span><span class="fu">here</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This operator indicates to R that we want to use the ggplot() function from the ggplot2 package. In some cases, multiple functions from different packages may have the same name. This means that one will <em>mask</em> the other. R will provide a warning when you load libraries which share package names, but this is easy to miss.</p>
+<p>We probably don’t know every package our friend has installed on their machine. By using the :: operator, we can make sure every function is running from the correct package. This may also save some headache if you accidentally mask a function down the road.</p>
+</section>
+</section>
+<section id="sharing-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="sharing-the-project">[7] Sharing the Project</h2>
+<p>With that, you should be prepared to share your analysis with your committee or collaborators! Hopefully they respond in a timely manner. Once you have everything in a .zip archive, you can share through email, a thumb drive, OneDrive/cloud service, or maybe even GitHub. As always, thank you for reading and please reach out with any feedback!</p>
 
 
 </section>

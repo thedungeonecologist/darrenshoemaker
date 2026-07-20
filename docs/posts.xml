@@ -106,6 +106,332 @@
   <pubDate>Tue, 24 Feb 2026 05:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>Coding for Sharing and Collaboration</title>
+  <dc:creator>Darren Shoemaker</dc:creator>
+  <link>https://your-website-url.example.com/posts/codingcollaboration/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This content was originally published as a part of the MSU WFA Coding Club and my tools and process have evolved somewhat since then. However, I stand by the philosophy of this post, and the strategies described here are still a good starting point for beginners looking to be more thoughtful about their data science projects.</p>
+</div>
+</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Today we’re going to discuss how to share code with your committee or collaborators. An unfortunately frequent event during graduate school is to spend weeks or months developing a script, share that script with your committee member, and the script fails when they try to run it. What happened? It worked perfectly yesterday! As always, my solution is not the only solution, so if you find something which works better, absolutely do that (and maybe tell me so I don’t keep doing stuff the hard way). The idea is that your collaborator(s) should be able to simply click run on a .R script and obtain the same output as you.</p>
+<p>A useful heuristic I like is to ask myself, “Would my friend be able to run my script on their laptop at our Arctic research base?” If the answer is yes*, you’re already done, but if you’re not sure, keep reading!</p>
+<p>*If you are working with extremely large files or computationally intensive tasks, their laptop may not be able to run the script anyway, so assume a relatively normal analysis.</p>
+<section id="working-in-projects" class="level2">
+<h2 class="anchored" data-anchor-id="working-in-projects">[1] Working in Projects</h2>
+<p>The easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can <a href="https://thedungeonecologist.github.io/darrenshoemaker/posts/codingcollaboration/index.html">read here</a>. Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/codingcollaboration/images/house_folders.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Projects are helpful for collaboration because the entire project can be shared as a .zip file. I personally use the program 7-zip to create zip files, but Windows has a native function. Right click on the project directory and click Add to [PROJECT_NAME.zip]. I am going to use R_organized_house from the staying organized guide as an example.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/codingcollaboration/images/zip_files.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>You should end up with a .zip archive with the same name as your project directory.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/codingcollaboration/images/zipped_house.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>This is the folder you will share with your collaborators. Remember they will need to unzip the folder before they can start working with your project.</p>
+</section>
+<section id="packages-and-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="packages-and-libraries">[2] Packages and Libraries</h2>
+<p>The .R script file you actually them to run should be inside the zipped archive. Once they unzip the folder, they can open the .Rproj file in their own local RStudio environment.</p>
+<p>This guide requires the here() library. As with all libraries, they have to be loaded before we can use the functions in them. You have almost certainly used the line library([PACKAGE_NAME|) in a script before.</p>
+</section>
+<section id="libraries" class="level2">
+<h2 class="anchored" data-anchor-id="libraries">Libraries</h2>
+<p>Begin every script with a code chunk which loads the necessary libraries. This will ensure whoever runs the script after you will be able to access the functions you use.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Libraries</span></span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(here)</span></code></pre></div></div>
+</div>
+<p>Depending on if you’ve used here() before, you may see the following error.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/codingcollaboration/images/no_here.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>For the sake of argument, we’ll assume our friend in the Arctic has not used the here() library and does receive the error. This means the script has already failed before we have begun any analysis or even loaded our data.</p>
+<p>This means the user has not installed the package. This brings us to a crossroads so I’m going to get on a soapbox: As a general rule, I do not want my scripts to modify the end users’ computer. This means I do not want to install new software or write new files. If your collaborator trusts you, and I hope they do, they probably won’t care, but I think this is best practice from a coding, data management, and privacy perspective. However, without installing the package, the script won’t work.</p>
+<p>My workaround is to provide the installation code but commented out. The user can use their own due diligence and review if they want to install the package, and that the install.packages() function will be skipped over if they already have the package and installation is unnecessary. This will look something like the following code chunk.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Install Packages</span></span>
+<span id="cb2-2"></span>
+<span id="cb2-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#install.packages('here')</span></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#install.packages('ggplot2')</span></span>
+<span id="cb2-5"></span>
+<span id="cb2-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Libraries </span></span>
+<span id="cb2-7"></span>
+<span id="cb2-8"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(here)</span>
+<span id="cb2-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggplot2)</span></code></pre></div></div>
+</div>
+</section>
+<section id="reading-in-data" class="level2">
+<h2 class="anchored" data-anchor-id="reading-in-data">[3] Reading in Data</h2>
+<p>Once our friend has loaded the appropriate libraries, they need to access any data read in by the script. A common trap is to use the function setwd() to access files.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/codingcollaboration/images/setwd.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>This works fine on my computer. The issue is E: is my external hard drive, R_Stuff keeps backups of my work, and coding_club is a local directory I use for the website. My friend has none of these folders! This means any script which uses this line will only work exactly on my computer and if I don’t change anything about my folders. Unlikely!</p>
+<p>The here() package is my preferred method for accessing a working directory in a collaborative setting. This package works by automatically (magically) setting the working directory to the highest folder associated with the R Project. This works by looking for .Rproj, .gitignore, or another high-level file which applies to the entire project. This should occur as soon as the library is loaded, but you can double check by calling the here::here() function.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">here<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>()</span></code></pre></div></div>
+</div>
+<p>This function will identify where the term “here” is referring to. In my case, this is the coding_club folder I used to build this website.</p>
+<p>For the purposes of this example, I am going to read in the filtered virginca_processed .csv which we made in the Staying Organized guide. Another good practice is to use head(), str(), or your preferred summary function to make sure the dataframe you read in looks like what you expect.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read.csv</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">file =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'posts/codingcollaboration/data'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'virginica_processed.csv'</span>))</span>
+<span id="cb4-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">head</span>(dat)</span></code></pre></div></div>
+</div>
+<p>This looks like the iris dataset filtered to only include the species <em>virginica</em>. This is what I expected, so we’re ready to move on.</p>
+</section>
+<section id="using-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-data">[4] Using the Data</h2>
+<p>If we have done everything described above correctly, our friend in the Arctic should now have the filtered iris dataframe, named dat, in their R environment. Sharing the data and files associated with an R script or project is probably 90% of the battle, so take a deep breath.</p>
+<p>As an example, we’re going to make a couple plots using these data in the ggplot package, but substitute any analysis you want to share.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">plot_1 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> ggplot2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> dat, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mapping =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> Petal.Width, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> Petal.Length, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> Species)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">xlab</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Petal Width'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ylab</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Petal Length'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggtitle</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Length and Width of Virginica Petals in Sample'</span>)</span>
+<span id="cb5-6"></span>
+<span id="cb5-7">plot_1</span>
+<span id="cb5-8"></span>
+<span id="cb5-9">plot_2 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> ggplot2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> dat, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mapping =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> Sepal.Width, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> Sepal.Length, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> Species)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-11">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">xlab</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sepal Width'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-12">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ylab</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sepal Length'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb5-13">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggtitle</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Length and Width of Virginica Sepals in Sample'</span>)</span>
+<span id="cb5-14"></span>
+<span id="cb5-15"></span>
+<span id="cb5-16">plot_2</span></code></pre></div></div>
+</div>
+</section>
+<section id="saving-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="saving-outputs">[5] Saving Outputs</h2>
+<p>Similarly to installing packages, I don’t like writing new files to another user’s computer. Still, many researchers will want to be able to access output files after running a script. I always try to provide the code to get the output, but again commented out. You may just want to reach out to your collaborators to clarify their preferences if the commented codes are annoying.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#ggsave(plot_1, file = here('output', 'plot_1.png'), dpi = 300)</span></span>
+<span id="cb6-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#ggsave(plot_2, file = here('output', 'plot_2.png'), dpi = 300)</span></span></code></pre></div></div>
+</div>
+<p>Again, the here() function lets us write the files to the output folder contained in the project directory. This means the images are written to the same place no matter who runs the script.</p>
+</section>
+<section id="general-best-practices-for-shared-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="general-best-practices-for-shared-scripts">[6] General Best Practices for Shared Scripts</h2>
+<p>Congratulations! If you’ve made it this far, you should be able to write a script anyone can run. This section just adds a few extra tips which may be helpful. I will update this section relatively frequently so feel free to share anything you want added.</p>
+<section id="comment-thoroughly" class="level3">
+<h3 class="anchored" data-anchor-id="comment-thoroughly">1. Comment Thoroughly</h3>
+<p>Just because your friend is able to run the script, it may not be immediately clear what each section of the script is doing. I recommend adding comments to the code to guide them through what each major section does. This will also be helpful to you in the future if you have to revisit an old project.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Read data</span></span>
+<span id="cb7-2"></span>
+<span id="cb7-3"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Generate plots</span></span>
+<span id="cb7-4"></span>
+<span id="cb7-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Mixed effects modeling for fish abundance ----</span></span>
+<span id="cb7-6"></span>
+<span id="cb7-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#' The output from this model suggests water temperature has a positive effect on fish abundance. </span></span></code></pre></div></div>
+</div>
+<p>There are a few strategies to commenting. You don’t need to write a research paper in the script, but some guidance can clarify complex code. Different types of comments only marginally change the script, but can affect the output if you knit the script into a different document.</p>
+<p>The number of # symbols indicate the level of header. Incidentally, the Introduction header of this page uses #, each section uses ##, and the subsections in [6] use ###.</p>
+<p>Adding the four minus signs after a comment will turn that into a section which can be accessed from the outline button in the top right of the script window. This is useful if your script is very long.</p>
+<p>The apostrophe after the last comment indicates that this is a roxygen comment. This won’t change anything here, but indicates the comment should be treated as plain text in an HTML or PDF document.</p>
+</section>
+<section id="call-functions-explicitly" class="level3">
+<h3 class="anchored" data-anchor-id="call-functions-explicitly">2. Call Functions Explicitly</h3>
+<p>You may have noticed the double colon operators before some of the functions above.</p>
+<p>::</p>
+<p>This operator is used before calling a function to explicitly define the package namespace of that function. In our case, we used the following.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">ggplot2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>()</span>
+<span id="cb8-2">here<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">here</span>()</span></code></pre></div></div>
+</div>
+<p>This operator indicates to R that we want to use the ggplot() function from the ggplot2 package. In some cases, multiple functions from different packages may have the same name. This means that one will <em>mask</em> the other. R will provide a warning when you load libraries which share package names, but this is easy to miss.</p>
+<p>We probably don’t know every package our friend has installed on their machine. By using the :: operator, we can make sure every function is running from the correct package. This may also save some headache if you accidentally mask a function down the road.</p>
+</section>
+</section>
+<section id="sharing-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="sharing-the-project">[7] Sharing the Project</h2>
+<p>With that, you should be prepared to share your analysis with your committee or collaborators! Hopefully they respond in a timely manner. Once you have everything in a .zip archive, you can share through email, a thumb drive, OneDrive/cloud service, or maybe even GitHub. As always, thank you for reading and please reach out with any feedback!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <category>collaboration</category>
+  <guid>https://your-website-url.example.com/posts/codingcollaboration/</guid>
+  <pubDate>Thu, 26 Sep 2024 04:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Staying Organized with R Projects</title>
   <dc:creator>Darren Shoemaker</dc:creator>
   <link>https://your-website-url.example.com/posts/staying_organized/</link>
