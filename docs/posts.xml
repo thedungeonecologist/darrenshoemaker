@@ -135,7 +135,7 @@
 <p>*If you are working with extremely large files or computationally intensive tasks, their laptop may not be able to run the script anyway, so assume a relatively normal analysis.</p>
 <section id="working-in-projects" class="level2">
 <h2 class="anchored" data-anchor-id="working-in-projects">[1] Working in Projects</h2>
-<p>The easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can <a href="https://thedungeonecologist.github.io/darrenshoemaker/posts/codingcollaboration/index.html">read here</a>. Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.</p>
+<p>The easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can <a href="https://thedungeonecologist.github.io/darrenshoemaker/posts/staying_organized/">read here</a>. Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://your-website-url.example.com/posts/codingcollaboration/images/house_folders.PNG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>

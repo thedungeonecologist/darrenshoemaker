@@ -29,7 +29,7 @@ A useful heuristic I like is to ask myself, "Would my friend be able to run my s
 
 ## \[1\] Working in Projects
 
-The easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can [read here](https://thedungeonecologist.github.io/darrenshoemaker/posts/codingcollaboration/index.html). Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.
+The easiest way to collaborate is to work inside of an intuitively named R Project using a .Rproj file. I wrote a simple guide on using R Projects which you can [read here](https://thedungeonecologist.github.io/darrenshoemaker/posts/staying_organized/). Remember that a project is a self-contained directory which should contain all the components needed to run an analysis. In general, I keep data, output, scripts, and temp folders inside project directories, but adapt this to your own needs.
 
 ![](images/house_folders.PNG){fig-align="center"}
 
