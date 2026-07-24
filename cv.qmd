@@ -147,6 +147,10 @@ embed-resources: true
 
 ------------------------------------------------------------------------
 
+#### [2026{.underline}]
+
+- University at Buffalo Art of Research competition finalist. Buffalo, New York.
+
 #### [2025]{.underline}
 
 - Best Student Oral Presentation. American Fisheries Society Mississippi Chapter Meeting. Starkville, Mississippi.
