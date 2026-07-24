@@ -147,7 +147,7 @@ embed-resources: true
 
 ------------------------------------------------------------------------
 
-#### [2026{.underline}]
+#### [2026]{.underline}
 
 - University at Buffalo Art of Research competition finalist. Buffalo, New York.
 
