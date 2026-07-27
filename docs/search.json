@@ -32,14 +32,35 @@
     "href": "outreach.html",
     "title": "Outreach",
     "section": "",
-    "text": "Integrating GitHub and RStudio\n\n\n\nworkshops\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nDarren Shoemaker\n\n\n\n\n\n\n\n\n\n\n\n\nProjected Reservoir Impairment in the Conterminous United States following Three Climate Change Scenarios\n\n\n\nconferences\n\n\n\n\n\n\n\n\n\nFeb 26, 2025\n\n\nDarren Shoemaker\n\n\n\n\n\nNo matching items"
+    "text": "New York’s Natural Cathedral\n\n\n\noutreach\n\n\n\n\n\n\n\n\n\nApr 28, 2026\n\n\nDarren Shoemaker\n\n\n\n\n\n\n\n\n\n\n\n\nIntegrating GitHub and RStudio\n\n\n\nworkshops\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nDarren Shoemaker\n\n\n\n\n\n\n\n\n\n\n\n\nProjected Reservoir Impairment in the Conterminous United States following Three Climate Change Scenarios\n\n\n\nconferences\n\n\n\n\n\n\n\n\n\nFeb 26, 2025\n\n\nDarren Shoemaker\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "outreach/afs_2025/index.html",
-    "href": "outreach/afs_2025/index.html",
-    "title": "Projected Reservoir Impairment in the Conterminous United States following Three Climate Change Scenarios",
+    "objectID": "outreach/artofresearch_2026/index.html",
+    "href": "outreach/artofresearch_2026/index.html",
+    "title": "New York’s Natural Cathedral",
     "section": "",
-    "text": "Slides from my presentation at the 2025 meeting of the Mississippi State Chapter of the American Fisheries Society.\n\n  &lt;p&gt;Your browser does not support PDFs. &lt;a href=\"ms_afs_2025_v1.pdf\"&gt;Download the PDF&lt;/a&gt;.&lt;/p&gt;"
+    "text": "The University at Buffalo Art of Research competition is an annual event for graduate students and postdocs to present an image representative of their research to fellow scholars and the general public. I presented a photo I took while assisting an undergraduate honors student with his field work during winter 2025.\n\n\n\n\n\nThis photo was taken in a native hemlock forest on the Old Scarbuck Trail in Erie County, New York. Hemlock are an ecologically important native tree that form dense canopies, creating dark areas in the understory. These provide shelter and refuse for other native species including amphibians such as frogs and salamanders, migrating birds, as well as unique communities of shade-tolerant plants that cannot survive in sunnier areas. Sadly, these important and beautiful trees are being threatened by the invasive hemlock woolly adelgid, a small insect that resembles an aphid. This invasive species forms white masses on hemlock needles, making them easy to spot. Several efforts to control woolly adelgid are udnerway, including the application of pesticides to hemlock trees beleived to be especially vulnerable. Our lab is currently working on a project led by the undergraduate student Hal Svetanics to monitor these pesticides in ephemeral streams to mitigate potential negative side effects from these control efforts. Between the control and monitoring, we hope to preserve the natural beauty and ecological integrity of our native hemlock cathedrals for future generations."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Links",
+    "section": "",
+    "text": "Darren Shoemaker is a postdoctoral research associate in the department of Biological Sciences at the University at Buffalo, New York. His primary research interests are examining climatic influences on aquatic ecosystems at broad scales. His work integrates the fields of ecology, climate science, machine learning, and bioinformatics. Understanding climatic influences on ecosystems is increasingly relevant in the 21st century to guide natural resources management and policymakers when making decisions sensitive to future climate."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "My Links",
+    "section": "Education",
+    "text": "Education\nMississippi State University | Mississippi State, MS\nPhD in Forest Resources | May 2025\nPurdue University - Fort Wayne | Fort Wayne, IN\nMS in Biology | May 2021\nBS in Biology, concentration ecology & evolution | May 2018"
+  },
+  {
+    "objectID": "index.html#professional-experience",
+    "href": "index.html#professional-experience",
+    "title": "My Links",
+    "section": "Professional Experience",
+    "text": "Professional Experience\nUniversity at Buffalo | Postdoctoral Research Associate | July 2025 - present"
   },
   {
     "objectID": "cv.html",
@@ -119,25 +140,11 @@
     "text": "References\n\nProfessional references available on request."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Links",
+    "objectID": "outreach/afs_2025/index.html",
+    "href": "outreach/afs_2025/index.html",
+    "title": "Projected Reservoir Impairment in the Conterminous United States following Three Climate Change Scenarios",
     "section": "",
-    "text": "Darren Shoemaker is a postdoctoral research associate in the department of Biological Sciences at the University at Buffalo, New York. His primary research interests are examining climatic influences on aquatic ecosystems at broad scales. His work integrates the fields of ecology, climate science, machine learning, and bioinformatics. Understanding climatic influences on ecosystems is increasingly relevant in the 21st century to guide natural resources management and policymakers when making decisions sensitive to future climate."
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "My Links",
-    "section": "Education",
-    "text": "Education\nMississippi State University | Mississippi State, MS\nPhD in Forest Resources | May 2025\nPurdue University - Fort Wayne | Fort Wayne, IN\nMS in Biology | May 2021\nBS in Biology, concentration ecology & evolution | May 2018"
-  },
-  {
-    "objectID": "index.html#professional-experience",
-    "href": "index.html#professional-experience",
-    "title": "My Links",
-    "section": "Professional Experience",
-    "text": "Professional Experience\nUniversity at Buffalo | Postdoctoral Research Associate | July 2025 - present"
+    "text": "Slides from my presentation at the 2025 meeting of the Mississippi State Chapter of the American Fisheries Society.\n\n  &lt;p&gt;Your browser does not support PDFs. &lt;a href=\"ms_afs_2025_v1.pdf\"&gt;Download the PDF&lt;/a&gt;.&lt;/p&gt;"
   },
   {
     "objectID": "outreach/github_rstudio/index.html",
