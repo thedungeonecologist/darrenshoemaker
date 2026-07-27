@@ -9,22 +9,6 @@
     <lastmod>2026-07-02T12:34:47.673Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/cv.html</loc>
-    <lastmod>2026-07-27T12:34:06.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/index.html</loc>
-    <lastmod>2026-07-27T12:33:34.547Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/staying_organized/index.html</loc>
-    <lastmod>2026-07-03T19:46:03.696Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/outreach/github_rstudio/index.html</loc>
-    <lastmod>2026-07-15T16:58:37.388Z</lastmod>
-  </url>
-  <url>
     <loc>https://your-website-url.example.com/outreach.html</loc>
     <lastmod>2026-07-15T16:56:25.979Z</lastmod>
   </url>
@@ -33,7 +17,23 @@
     <lastmod>2026-07-15T16:58:23.492Z</lastmod>
   </url>
   <url>
+    <loc>https://your-website-url.example.com/cv.html</loc>
+    <lastmod>2026-07-27T12:38:29.801Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/index.html</loc>
+    <lastmod>2026-07-27T12:33:34.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/outreach/github_rstudio/index.html</loc>
+    <lastmod>2026-07-15T16:58:37.388Z</lastmod>
+  </url>
+  <url>
     <loc>https://your-website-url.example.com/posts/codingcollaboration/index.html</loc>
     <lastmod>2026-07-20T13:12:49.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/staying_organized/index.html</loc>
+    <lastmod>2026-07-03T19:46:03.696Z</lastmod>
   </url>
 </urlset>
