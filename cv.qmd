@@ -123,6 +123,8 @@ embed-resources: true
 
 #### [Guest Lectures]{.underline}
 
+2026 - Osteological Correlates and Diet. University at Buffalo The Dinosaurs. 
+
 2025 - Data-driven ecology: conservation in the 21st century. University at Buffalo Ichthyology.
 
 2020 - Arthropod identification in iNaturalist. Purdue University Fort Wayne Entomology.
