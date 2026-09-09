@@ -1,0 +1,11 @@
+# _brand.yml
+color:
+  palette:
+    custom-primary: "#0F4C5C"
+    custom-accent: "#E36414"
+    custom-bg: "#FAFAFA"
+    custom-text: "#1C1A27"
+  
+  foreground: custom-text
+  background: custom-bg
+  primary: custom-primary

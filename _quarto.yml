@@ -7,7 +7,7 @@ project:
 website:
   description: "Personal Website for Darren Shoemaker"
   site-url: https://your-website-url.example.com
-  title: "thedungeonecologist"
+  title: "Darren Shoemaker, Ph.D."
   
   navbar:
     right:
