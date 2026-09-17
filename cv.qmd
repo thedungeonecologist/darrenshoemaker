@@ -45,29 +45,29 @@ embed-resources: true
 
 #### [Manuscripts Published]{.underline}
 
-1. Ahmad, H., **DJ Shoemaker**, B Liu, S Kolluru, E Mocek, P Dash. 2026. Spatiotemporal water quality dynamics in Southern U.S. coastal reserves: A long-term perspective. Regional Studies in Marine Science. DOI: https://doi.org/10.1016/j.rsma.2026.105445 
+1. Ahmad, H., **DJ Shoemaker**, B Liu, S Kolluru, E Mocek, P Dash. 2026. *Spatiotemporal water quality dynamics in Southern U.S. coastal reserves: A long-term perspective*. Regional Studies in Marine Science. DOI: https://doi.org/10.1016/j.rsma.2026.105445 
 
-2.  Ong’ondo, F., H Ahmad, F Jose, SI Jhara, **DJ Shoemaker**, M Islam, P Dash, S Bhuyan, N Islam. 2026. AI-Driven Geospatial Modeling of Urban Expansion and Environmental Impacts. Remote Sensing in Earth System Sciences. DOI: <https://doi.org/10.1007/s41976-026-00284-1>
+2.  Ong’ondo, F., H Ahmad, F Jose, SI Jhara, **DJ Shoemaker**, M Islam, P Dash, S Bhuyan, N Islam. 2026. *AI-Driven Geospatial Modeling of Urban Expansion and Environmental Impacts*. Remote Sensing in Earth System Sciences. DOI: <https://doi.org/10.1007/s41976-026-00284-1>
 
-3.  **Shoemaker, D.J.**, PC Smiley Jr., RB Gillespie. 2025. Evaluating the Influence of Climatic and Hydrologic Variables on Fish Communities in Channelised Agricultural Headwater Streams in the Midwestern USA. Freshwater Biology. DOI: <https://doi.org/10.1111/fwb.70148>  
+3.  **Shoemaker, D.J.**, PC Smiley Jr., RB Gillespie. 2025. *Evaluating the Influence of Climatic and Hydrologic Variables on Fish Communities in Channelised Agricultural Headwater Streams in the Midwestern USA*. Freshwater Biology. DOI: <https://doi.org/10.1111/fwb.70148>  
 
-4.  Ahmad, H., F Jose, P Dash, **DJ Shoemaker**, SI Jhara. 2025. Hypoxia in the Gulf of Mexico: A machine learning approach for evaluation and prediction. Regional Studies in Marine Science. DOI: <https://doi.org/10.1016/j.rsma.2025.104363>
+4.  Ahmad, H., F Jose, P Dash, **DJ Shoemaker**, SI Jhara. 2025. *Hypoxia in the Gulf of Mexico: A machine learning approach for evaluation and prediction*. Regional Studies in Marine Science. DOI: <https://doi.org/10.1016/j.rsma.2025.104363>
 
-5.  Ahmad, H., F Jose, P Dash, **DJ Shoemaker**, SI Jhara. 2025. Machine learning-based estimation of chlorophyll-a in the Mississippi Sound using Landsat and ocean optics data. Environmental Earth Sciences. DOI: <http://dx.doi.org/10.1007/s12665-025-12191-7>
+5.  Ahmad, H., F Jose, P Dash, **DJ Shoemaker**, SI Jhara. 2025. *Machine learning-based estimation of chlorophyll-a in the Mississippi Sound using Landsat and ocean optics data*. Environmental Earth Sciences. DOI: <http://dx.doi.org/10.1007/s12665-025-12191-7>
 
-6.  Miranda, L.E., R Krogman, **DJ Shoemaker**. 2024. Assessment of pollution and impairments of US reservoirs based on expert opinion. Frontiers in Environmental Science, section Freshwater Science. DOI: <https://doi.org/10.3389/fenvs.2024.1488955>
+6.  Miranda, L.E., R Krogman, **DJ Shoemaker**. 2024. *Assessment of pollution and impairments of US reservoirs based on expert opinion*. Frontiers in Environmental Science, section Freshwater Science. DOI: <https://doi.org/10.3389/fenvs.2024.1488955>
 
-7.  Ahmad, H, F Jose, **DJ Shoemaker**. 2024. Mapping, Dynamics, and Future Change Analysis of Sundarbans delta using Cellular Automata and Artificial Neural Network Modeling. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing. DOI: <https://doi.org/10.1109/JSTARS.2024.3367116>
+7.  Ahmad, H, F Jose, **DJ Shoemaker**. 2024. *Mapping, Dynamics, and Future Change Analysis of Sundarbans delta using Cellular Automata and Artificial Neural Network Modeling*. IEEE Journal of Selected Topics in Applied Earth Observation and Remote Sensing. DOI: <https://doi.org/10.1109/JSTARS.2024.3367116>
 
-8.  Ahmad, H, M Abdallah, F Jose, HE Elzain, S Bhuyan, **DJ Shoemaker**, S Selvam. 2023. Evaluation and mapping of predicted future land use changes using hybrid models in a coastal area. Ecological Informatics. DOI: <https://doi.org/10.1016/j.ecoinf.2023.102324>
+8.  Ahmad, H, M Abdallah, F Jose, HE Elzain, S Bhuyan, **DJ Shoemaker**, S Selvam. 2023. *Evaluation and mapping of predicted future land use changes using hybrid models in a coastal area*. Ecological Informatics. DOI: <https://doi.org/10.1016/j.ecoinf.2023.102324>
 
 #### [Manuscripts in Prep]{.underline}
 
-1.  **Shoemaker, DJ**, H Ahmad, LE Miranda. Classifying Reservoir Impairment from Climate Change using Expert Opinion and Machine Learning.
+1.  **Shoemaker, DJ**, H Ahmad, LE Miranda. *Classifying Reservoir Impairment from Climate Change using Expert Opinion and Machine Learning*.
 
-2.  Aby, TM, CN Cornhill, EA Cubberley, GL Curtis, JC Danielson, BM Dwyer, DM Hurst, ZR Kellogg, EB Kovacs, JW Lindberg, GN McGee, A Noland, EA Pierce, PJ Ransbottom, KN Schane, TJ Scoville, **DJ Shoemaker**, SJ Siddons, RK Sovey, EL Steffen, JL Troy, DC Youtsey, X Yu, and JM Marshall. In preparation. Comparison of old field and restoration at Salomon Farm Park, Indiana.
+2.  Aby, TM, CN Cornhill, EA Cubberley, GL Curtis, JC Danielson, BM Dwyer, DM Hurst, ZR Kellogg, EB Kovacs, JW Lindberg, GN McGee, A Noland, EA Pierce, PJ Ransbottom, KN Schane, TJ Scoville, **DJ Shoemaker**, SJ Siddons, RK Sovey, EL Steffen, JL Troy, DC Youtsey, X Yu, and JM Marshall. In preparation. *Comparison of old field and restoration at Salomon Farm Park, Indiana*.
 
-3.  Ahmad, H, **DJ Shoemaker**, B Liu, J Douglass, P Dash. Long-Term Trends and Seasonal Drivers of Water Quality in US Southern Coastal National Reserves: Unraveling the Impacts of Climate Change.
+3.  Ahmad, H, **DJ Shoemaker**, B Liu, J Douglass, P Dash. *Long-Term Trends and Seasonal Drivers of Water Quality in US Southern Coastal National Reserves: Unraveling the Impacts of Climate Change*.
 
 #### [Manuscript Reviews]{.underline}
 
@@ -83,25 +83,25 @@ embed-resources: true
 
 #### [Conference Presentations]{.underline}
 
-1.  **Shoemaker, D.J.**, Smiley, P.C., Ruppert, K.M., and Gillespie, R.B. 2026. Occupancy Patterns of Headwater Stream Fishes in an Agricultural Watershed. Society for Freshwater Science Annual Meeting. Spokane, Washington.
+1.  **Shoemaker, D.J.**, Smiley, P.C., Ruppert, K.M., and Gillespie, R.B. 2026. *Occupancy Patterns of Headwater Stream Fishes in an Agricultural Watershed*. Society for Freshwater Science Annual Meeting. Spokane, Washington.
 
-2.  Zachary Kellogg, Betsy Yankowiak, Bruce Kingsbury, **Darren Shoemaker**, Mark A. Jordan. 2025. Spatial Analysis and Habitat Use of Snapping Turtles in an Urban Wetland Complex. Mississippi Amphibian and Reptile Symposium. Jackson, MS.
+2.  Zachary Kellogg, Betsy Yankowiak, Bruce Kingsbury, **Darren Shoemaker**, Mark A. Jordan. 2025. *Spatial Analysis and Habitat Use of Snapping Turtles in an Urban Wetland Complex*. Mississippi Amphibian and Reptile Symposium. Jackson, MS.
 
-3.  **Shoemaker, D.J.** and Miranda, L.E. 2025. Projected future reservoir impairment in the conterminous United States following three climate change scenarios. Mississippi Chapter of the American Fisheries Society 51^st^ Annual Meeting. Starkville, MS.
+3.  **Shoemaker, D.J.** and Miranda, L.E. 2025. *Projected future reservoir impairment in the conterminous United States following three climate change scenarios*. Mississippi Chapter of the American Fisheries Society 51^st^ Annual Meeting. Starkville, MS.
 
-4.  **Shoemaker, D.J.** and Miranda, L.E. 2024. Predicted Impairment of Reservoirs in the United States under Three Climate Change Scenarios. Graduate Student Symposium at the Dauphin Island Sea Lab. Dauphin Island Sea Lab, AL.
+4.  **Shoemaker, D.J.** and Miranda, L.E. 2024. *Predicted Impairment of Reservoirs in the United States under Three Climate Change Scenarios*. Graduate Student Symposium at the Dauphin Island Sea Lab. Dauphin Island Sea Lab, AL.
 
-5.  **Shoemaker, D.J.**, Ahmad, H., Miranda, L.E. 2024. Modeling reservoir impairment from climate change using human dimensions. Mississippi Chapter of the American Fisheries Society 50^th^ Annual Meeting. Tupelo, MS.
+5.  **Shoemaker, D.J.**, Ahmad, H., Miranda, L.E. 2024. *Modeling reservoir impairment from climate change using human dimensions*. Mississippi Chapter of the American Fisheries Society 50^th^ Annual Meeting. Tupelo, MS.
 
-6.  **Shoemaker, D.J.**,Miranda, L.E., Dunn, C., Hunt, K.M., and Boyles, R.P. 2023. Challenges Evaluating Reservoir Fish Habitats in a Changing Climate. 153^rd^ American Fisheries Society Annual Meeting. Grand Rapids, MI.
+6.  **Shoemaker, D.J.**,Miranda, L.E., Dunn, C., Hunt, K.M., and Boyles, R.P. 2023. *Challenges Evaluating Reservoir Fish Habitats in a Changing Climate*. 153^rd^ American Fisheries Society Annual Meeting. Grand Rapids, MI.
 
-7.  **Shoemaker, D.J.**, Miranda, L.E., Dunn, C., Hunt, K.M., and Boyles, R.P. 2023. Vulnerability of Reservoir Fish Habitats to Climate Change. Mississippi Chapter of the American Fisheries Society 49^th^ Annual Meeting. Natchez, MS.
+7.  **Shoemaker, D.J.**, Miranda, L.E., Dunn, C., Hunt, K.M., and Boyles, R.P. 2023. *Vulnerability of Reservoir Fish Habitats to Climate Change*. Mississippi Chapter of the American Fisheries Society 49^th^ Annual Meeting. Natchez, MS.
 
-8.  **Shoemaker, D.J.**, Gillespie, R, Smiley, P.C.2022. Assessing the relationships of fish communities with climate and hydrology in agricultural headwater streams. Mississippi Chapter of the American Fisheries Society 48^th^ Annual Meeting. Hattiesburg, MS.
+8.  **Shoemaker, D.J.**, Gillespie, R, Smiley, P.C.2022. *Assessing the relationships of fish communities with climate and hydrology in agricultural headwater streams*. Mississippi Chapter of the American Fisheries Society 48^th^ Annual Meeting. Hattiesburg, MS.
 
-9.  **Shoemaker, D.J**, and Curtis, G.L. 2019. Influence of Agricultural Fields on Fish Assemblages within Channelized Streams. Indiana Academy of Science 134^th^ Annual Academy meeting. Indianapolis, IN.
+9.  **Shoemaker, D.J**, and Curtis, G.L. 2019. *Influence of Agricultural Fields on Fish Assemblages within Channelized Streams*. Indiana Academy of Science 134^th^ Annual Academy meeting. Indianapolis, IN.
 
-10. **Shoemaker, D.J.** and Curtis, G.L. 2019. Influence of Agricultural Fields on Fish Assemblages within Channelized Streams. Society for Ecological Restoration Midwest Great Lakes Chapter Meeting. Pella, IA.
+10. **Shoemaker, D.J.** and Curtis, G.L. 2019. *Influence of Agricultural Fields on Fish Assemblages within Channelized Streams*. Society for Ecological Restoration Midwest Great Lakes Chapter Meeting. Pella, IA.
 
 ## Teaching Activity
 
