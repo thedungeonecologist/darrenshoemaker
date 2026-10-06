@@ -61,26 +61,6 @@ embed-resources: true
 
 8.  Ahmad, H, M Abdallah, F Jose, HE Elzain, S Bhuyan, **DJ Shoemaker**, S Selvam. 2023. *Evaluation and mapping of predicted future land use changes using hybrid models in a coastal area*. Ecological Informatics. DOI: <https://doi.org/10.1016/j.ecoinf.2023.102324>
 
-#### [Manuscripts in Prep]{.underline}
-
-1.  **Shoemaker, DJ**, H Ahmad, LE Miranda. *Classifying Reservoir Impairment from Climate Change using Expert Opinion and Machine Learning*.
-
-2.  Aby, TM, CN Cornhill, EA Cubberley, GL Curtis, JC Danielson, BM Dwyer, DM Hurst, ZR Kellogg, EB Kovacs, JW Lindberg, GN McGee, A Noland, EA Pierce, PJ Ransbottom, KN Schane, TJ Scoville, **DJ Shoemaker**, SJ Siddons, RK Sovey, EL Steffen, JL Troy, DC Youtsey, X Yu, and JM Marshall. In preparation. *Comparison of old field and restoration at Salomon Farm Park, Indiana*.
-
-3.  Ahmad, H, **DJ Shoemaker**, B Liu, J Douglass, P Dash. *Long-Term Trends and Seasonal Drivers of Water Quality in US Southern Coastal National Reserves: Unraveling the Impacts of Climate Change*.
-
-#### [Manuscript Reviews]{.underline}
-
-1.  International Journal of Biometeorology
-
-2.  Freshwater Biology
-
-3.  Environmental Monitoring and Assessment
-
-4.  Frontiers in Freshwater Science
-
-5.  Journal of Great Lakes Research
-
 #### [Conference Presentations]{.underline}
 
 1.  **Shoemaker, D.J.**, Smiley, P.C., Ruppert, K.M., and Gillespie, R.B. 2026. *Occupancy Patterns of Headwater Stream Fishes in an Agricultural Watershed*. Society for Freshwater Science Annual Meeting. Spokane, Washington.
@@ -102,6 +82,38 @@ embed-resources: true
 9.  **Shoemaker, D.J**, and Curtis, G.L. 2019. *Influence of Agricultural Fields on Fish Assemblages within Channelized Streams*. Indiana Academy of Science 134^th^ Annual Academy meeting. Indianapolis, IN.
 
 10. **Shoemaker, D.J.** and Curtis, G.L. 2019. *Influence of Agricultural Fields on Fish Assemblages within Channelized Streams*. Society for Ecological Restoration Midwest Great Lakes Chapter Meeting. Pella, IA.
+
+#### [Grantsmanship: Pending $220,000]{.underline}
+
+1. Project Sponsor: National Science Foundation
+   Program: Postdoctoral Research Fellowship in Biology
+   Project Title: Side scan sonar for instream fish habitat in the United States and Puerto Rico
+   Investigators: D.J. Shoemaker (PI)
+   Funding attempted: $220,000
+   Timeline: 1/1/2028-12/31/2029
+   Objectives: Implement side scan sonar surveys at selected National Ecological Observatory Network (NEON) sites to evalute instream structure and substrate.
+
+#### [Grantsmanship: Not Funded]{.underline}
+
+1. Project Sponsor: Association of Fish and Wildlife Agencies
+   Program: Multistate Conservation Grant Program
+   Project Title: Development of side-scan sonar surveys for sportfish habitat conservation
+   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker
+   Funding attempted: $242,705
+   Timeline: 1/1/2027-12/31/2027
+   Objectives: Implement side scan sonar surveys with multistate partners to identify critical sportfish habitat.
+
+#### [Manuscript Reviews]{.underline}
+
+1.  International Journal of Biometeorology
+
+2.  Freshwater Biology
+
+3.  Environmental Monitoring and Assessment
+
+4.  Frontiers in Freshwater Science
+
+5.  Journal of Great Lakes Research
 
 ## Teaching Activity
 
