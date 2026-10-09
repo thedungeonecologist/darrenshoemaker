@@ -85,22 +85,22 @@ embed-resources: true
 
 #### [Grantsmanship: Pending $220,000]{.underline}
 
-1. Project Sponsor: National Science Foundation
-   Program: Postdoctoral Research Fellowship in Biology
-   Project Title: Side scan sonar for instream fish habitat in the United States and Puerto Rico
-   Investigators: D.J. Shoemaker (PI)
-   Funding attempted: $220,000
-   Timeline: 1/1/2028-12/31/2029
-   Objectives: Implement side scan sonar surveys at selected National Ecological Observatory Network (NEON) sites to evalute instream structure and substrate.
+1. Project Sponsor: National Science Foundation\
+   Program: Postdoctoral Research Fellowship in Biology\
+   Project Title: Side scan sonar for instream fish habitat in the United States and Puerto Rico\
+   Investigators: D.J. Shoemaker (PI)\
+   Funding attempted: $220,000\
+   Timeline: 1/1/2028-12/31/2029\
+   Objectives: Implement side scan sonar surveys at selected National Ecological Observatory Network (NEON) sites to evaluate instream structure and substrate.
 
 #### [Grantsmanship: Not Funded]{.underline}
 
-1. Project Sponsor: Association of Fish and Wildlife Agencies
-   Program: Multistate Conservation Grant Program
-   Project Title: Development of side-scan sonar surveys for sportfish habitat conservation
-   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker
-   Funding attempted: $242,705
-   Timeline: 1/1/2027-12/31/2027
+1. Project Sponsor: Association of Fish and Wildlife Agencies\
+   Program: Multistate Conservation Grant Program\
+   Project Title: Development of side-scan sonar surveys for sportfish habitat conservation\
+   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker\
+   Funding attempted: $242,705\
+   Timeline: 1/1/2027-12/31/2027\
    Objectives: Implement side scan sonar surveys with multistate partners to identify critical sportfish habitat.
 
 #### [Manuscript Reviews]{.underline}
