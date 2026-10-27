@@ -88,8 +88,8 @@ embed-resources: true
 1. Project Sponsor: University at Buffalo (Internal)\
    Program: College of Arts of Science AI Catalyst Grant Program\
    Project Title: Sound of the streambed: AI-driven sonar assessments of freshwater habitats\
-   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker\
-   Funding attepted: $9,922\
+   Investigators: C.A. Krabbenhoft (PI), **D. Shoemaker**\
+   Funding attepted: **$9,922**\
    Timeline: Fiscal Year 2027\
    Objectives: Catalyst grant to obtain sonar equipment to support ongoing research in the Lake Erie streams.\
    Note: Co-wrote with PI as only faculty are eligible for internal awards
@@ -97,8 +97,8 @@ embed-resources: true
 2. Project Sponsor: National Science Foundation\
    Program: Postdoctoral Research Fellowship in Biology\
    Project Title: Side scan sonar for instream fish habitat in the United States and Puerto Rico\
-   Investigators: D.J. Shoemaker (PI)\
-   Funding attempted: $220,000\
+   Investigators: **D.J. Shoemaker (PI)**\
+   Funding attempted: **$220,000**\
    Timeline: 1/1/2028-12/31/2029\
    Objectives: Implement side scan sonar surveys at selected National Ecological Observatory Network (NEON) sites to evaluate instream structure and substrate.
 
@@ -107,8 +107,8 @@ embed-resources: true
 1. Project Sponsor: Association of Fish and Wildlife Agencies\
    Program: Multistate Conservation Grant Program\
    Project Title: Development of side-scan sonar surveys for sportfish habitat conservation\
-   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker\
-   Funding attempted: $242,705\
+   Investigators: C.A. Krabbenhoft (PI), **D. Shoemaker**\
+   Funding attempted: **$242,705**\
    Timeline: 1/1/2027-12/31/2027\
    Objectives: Implement side scan sonar surveys with multistate partners to identify critical sportfish habitat.
 
