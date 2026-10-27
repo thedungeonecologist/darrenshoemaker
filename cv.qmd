@@ -88,7 +88,7 @@ embed-resources: true
 1. Project Sponsor: University at Buffalo (Internal)\
    Program: College of Arts of Science AI Catalyst Grant Program\
    Project Title: Sound of the streambed: AI-driven sonar assessments of freshwater habitats\
-   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker*\
+   Investigators: C.A. Krabbenhoft (PI), D. Shoemaker\
    Funding attepted: $9,922\
    Timeline: Fiscal Year 2027\
    Objectives: Catalyst grant to obtain sonar equipment to support ongoing research in the Lake Erie streams.\
