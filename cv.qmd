@@ -92,7 +92,7 @@ embed-resources: true
    Funding attepted: $9,922\
    Timeline: Fiscal Year 2027\
    Objectives: Catalyst grant to obtain sonar equipment to support ongoing research in the Lake Erie streams.\
-   *Co-wrote with PI as only faculty are eligible for internal awards
+   Note: Co-wrote with PI as only faculty are eligible for internal awards
 
 2. Project Sponsor: National Science Foundation\
    Program: Postdoctoral Research Fellowship in Biology\
