@@ -200,7 +200,7 @@ embed-resources: true
 
 - Indiana University – Purdue University Top 50 Award. Indiana University – Purdue University Fort Wayne, Fort Wayne, Indiana.
 
-- Beverly Hume Memorial Award – “The Effects of Climate Change on Interaction between *Ursus arctos* and *Ursus maritimus*”. College of Arts and Sciences, Indiana University – Purdue University Fort Wayne, Fort Wayne, Indiana.
+- Beverly Hume Memorial Award – "The Effects of Climate Change on Interaction between *Ursus arctos* and *Ursus maritimus*." College of Arts and Sciences, Indiana University – Purdue University Fort Wayne, Fort Wayne, Indiana.
 
 ## Professional Development
 
@@ -211,6 +211,16 @@ embed-resources: true
 2024 - Adult CPR & AED Certification. USGS Cooperative Research Units: Emergency Care & Safety Institute
 
 2023 - Global Warming I: The Science and Modeling of Climate Change Coursera Certificate
+
+2022 - Diverse Perspectives: Words are Powerful: Diversity Terminology Simplified
+
+2022 - Safe Zone Awareness Training
+
+2022 - Safe Zone Ally Training "Building Allies and Supportive Environments"
+
+2022 - Safe Zone LGBTQ+ 101
+
+2022 - Safe Zone Gender 101 (Asynchronous Training)
 
 2019 - PFW Office of Graduate Studies Building Your Inclusive Classroom
 
