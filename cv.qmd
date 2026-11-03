@@ -61,6 +61,10 @@ embed-resources: true
 
 8.  Ahmad, H, M Abdallah, F Jose, HE Elzain, S Bhuyan, **DJ Shoemaker**, S Selvam. 2023. *Evaluation and mapping of predicted future land use changes using hybrid models in a coastal area*. Ecological Informatics. DOI: <https://doi.org/10.1016/j.ecoinf.2023.102324>
 
+#### [Software and Data Products]{.underline}
+
+**Shoemaker, D.J.**, Miranda, S., and C. Dunn. Reservoir Impacts from Climate Change (ResClim). 2026. Version 1.0.0: U.S. Geological Survey software release. <https://rconnect.usgs.gov/CRU/Res_Clim/>
+
 #### [Conference Presentations]{.underline}
 
 1.  **Shoemaker, D.J.**, Smiley, P.C., Ruppert, K.M., and Gillespie, R.B. 2026. *Occupancy Patterns of Headwater Stream Fishes in an Agricultural Watershed*. Society for Freshwater Science Annual Meeting. Spokane, Washington.
