@@ -63,7 +63,7 @@ embed-resources: true
 
 #### [Software and Data Products]{.underline}
 
-**Shoemaker, D.J.**, Miranda, S., and C. Dunn. Reservoir Impacts from Climate Change (ResClim). 2026. Version 1.0.0: U.S. Geological Survey software release. <https://rconnect.usgs.gov/CRU/Res_Clim/>
+1. **Shoemaker, D.J.**, Miranda, S., and C. Dunn. Reservoir Impacts from Climate Change (ResClim). 2026. Version 1.0.0: U.S. Geological Survey software release. <https://doi.org/10.5066/P13NURFZ>
 
 #### [Conference Presentations]{.underline}
 
