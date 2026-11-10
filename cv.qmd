@@ -150,11 +150,13 @@ embed-resources: true
 
 #### [Guest Lectures]{.underline}
 
-2026 - Osteological Correlates and Diet. University at Buffalo The Dinosaurs. 
+1. *Real-world research in stream ecology.* 2026. Stream Ecology. University at Buffalo. Buffalo, New York. 
 
-2025 - Data-driven ecology: conservation in the 21st century. University at Buffalo Ichthyology.
+2. *Osteological Correlates and Diet.* 2026. The Dinosaurs. University at Buffalo. Buffalo, New York.
 
-2020 - Arthropod identification in iNaturalist. Purdue University Fort Wayne Entomology.
+3. *Data-driven ecology: conservation in the 21st century.* 2025. Ichthyology. University at Buffalo. Buffalo, New York.
+
+4. *Arthropod identification in iNaturalist.* 2020. Purdue University - Fort Wayne, Fort Wayne, IN.
 
 #### [Workshops Led]{.underline}
 
