@@ -9,9 +9,7 @@ format:
 embed-resources: true
 ---
 
-## Academic History
-
-------------------------------------------------------------------------
+# Academic History
 
 +-------------------------+------------------------------------------------------------------------------------------------+
 |                         |                                                                                                |
@@ -25,9 +23,7 @@ embed-resources: true
 |                         | Minor – Professional Writing, 2018, Indiana University – Purdue University, Fort Wayne         |
 +-------------------------+------------------------------------------------------------------------------------------------+
 
-## Work Experience/Appointments
-
-------------------------------------------------------------------------
+# Work Experience/Appointments
 
 **Postdoctoral Research Associate.** Department of Biological Sciences. University at Buffalo. Buffalo, NY. 2025-Present.
 
@@ -39,9 +35,7 @@ embed-resources: true
 
 **Writing Consultant**. Helmke Library. Purdue University – Fort Wayne, Fort Wayne, Indiana. 2015 – 2019.
 
-## Scholarly Activity
-
-------------------------------------------------------------------------
+# Scholarly Activity
 
 #### [Manuscripts Published]{.underline}
 
@@ -128,9 +122,7 @@ embed-resources: true
 
 5.  Journal of Great Lakes Research
 
-## Teaching Activity
-
-------------------------------------------------------------------------
+# Teaching Activity
 
 #### [Course Instruction]{.underline}
 
@@ -174,9 +166,7 @@ embed-resources: true
 
 2019 - Led undergraduate student groups with Indiana Department of Natural Resources boat captains for river ecological surveys
 
-## Honors and Awards
-
-------------------------------------------------------------------------
+# Honors and Awards
 
 #### [2026]{.underline}
 
@@ -208,9 +198,7 @@ embed-resources: true
 
 - Beverly Hume Memorial Award – "The Effects of Climate Change on Interaction between *Ursus arctos* and *Ursus maritimus*." College of Arts and Sciences, Indiana University – Purdue University Fort Wayne, Fort Wayne, Indiana.
 
-## Professional Development
-
-------------------------------------------------------------------------
+# Professional Development
 
 #### [Specialized Training and Workshops Attended]{.underline}
 
@@ -244,7 +232,7 @@ embed-resources: true
 
 2022 - Leadership Seminar: How Cultural Competency Drives Teamwork
 
-## Service
+# Service
 
 ------------------------------------------------------------------------
 
@@ -290,14 +278,11 @@ Volunteered radio tracking snapping turtles at Eagle Marsh. Little River Wetland
 
 Assisted Ball State graduate student Angela Fletcher with small mammal trapping. Fort Wayne, Indiana.
 
-## Professional Memberships
-
-------------------------------------------------------------------------
+# Professional Memberships
 
 Society for Freshwater Science 2026-Present
 
-American Fisheries Society. 2021-Present
-
+American Fisheries Society. 2021-2025
 Indiana Academy of Science. 2019-2021
 
 Society for Ecological Restoration Great Lakes Chapter. 2019-2021
@@ -305,8 +290,6 @@ Society for Ecological Restoration Great Lakes Chapter. 2019-2021
 Beta Beta Beta Honor Society. 2017-2021
 
 ## Networking
-
-------------------------------------------------------------------------
 
 GitHub: <https://github.com/thedungeonecologist>
 
@@ -317,7 +300,5 @@ Google Scholar: <https://scholar.google.com/citations?user=nojq_iIAAAAJ&hl=en&oi
 ResearchGate: <https://www.researchgate.net/profile/Darren-Shoemaker>
 
 ## References
-
-------------------------------------------------------------------------
 
 Professional references available on request.
