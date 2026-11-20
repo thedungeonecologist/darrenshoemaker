@@ -301,18 +301,12 @@ font-style: inherit;">---</span></span></code></pre></div></div>
 <h3 class="anchored" data-anchor-id="code-chunks">Code Chunks</h3>
 <p>Code chunks are the “dynamic” component of a Quarto document. To add a code chunk, type three backticks (<code>```</code>), followed by brackets <code>{}</code>, and add three more backticks on a new line. Everything in between the two sets of backticks is interpreted as code. You can define the coding language you’re using by typing it inside the brackets, such as <code>{r}</code>. In RStudio and Positron, use the keyboard shortcut <code>ctrl+alt+i</code> to automatically insert an R code chunk.</p>
 <p>For example, we’re going to use the classic “iris” dataset from Ronald Fisher. We will load the data, inspect the dataframe with <code>head()</code>, plot flower petal lengths and widths by species, and finally add a legend.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Load the iris dataset</span></span>
-<span id="cb6-2"><span class="fu" style="color: #4758AB;
+<div class="cell nolisting">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">data</span>(iris)</span>
-<span id="cb6-3"></span>
-<span id="cb6-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Display the first few rows of the dataset</span></span>
-<span id="cb6-5"><span class="fu" style="color: #4758AB;
+<span id="cb6-2"></span>
+<span id="cb6-3"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">head</span>(iris)</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
@@ -324,10 +318,7 @@ font-style: inherit;">head</span>(iris)</span></code></pre></div></div>
 5          5.0         3.6          1.4         0.2  setosa
 6          5.4         3.9          1.7         0.4  setosa</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create a scatter plot of petal length vs width, colored by species</span></span>
-<span id="cb8-2"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot</span>(Petal.Length <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -340,26 +331,23 @@ background-color: null;
 font-style: inherit;">pch =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">19</span>)</span>
-<span id="cb8-3"></span>
-<span id="cb8-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Add a legend to identify the species</span></span>
-<span id="cb8-5"><span class="fu" style="color: #4758AB;
+<span id="cb8-2"></span>
+<span id="cb8-3"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">legend</span>(</span>
-<span id="cb8-6">  <span class="at" style="color: #657422;
+<span id="cb8-4">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"topleft"</span>,</span>
-<span id="cb8-7">  <span class="at" style="color: #657422;
+<span id="cb8-5">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">legend =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">levels</span>(iris<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">$</span>Species),</span>
-<span id="cb8-8">  <span class="at" style="color: #657422;
+<span id="cb8-6">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">col =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
@@ -368,17 +356,17 @@ background-color: null;
 font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">3</span>,</span>
-<span id="cb8-9">  <span class="at" style="color: #657422;
+<span id="cb8-7">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">pch =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">19</span>,</span>
-<span id="cb8-10">  <span class="at" style="color: #657422;
+<span id="cb8-8">  <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Species"</span></span>
-<span id="cb8-11">)</span></code></pre></div></div>
+<span id="cb8-9">)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -601,6 +589,8 @@ font-style: inherit;">---</span></span></code></pre></div></div>
 </section>
 
  ]]></description>
+  <category>workshops</category>
+  <category>collaboration</category>
   <guid>https://your-website-url.example.com/posts/quarto_intro/</guid>
   <pubDate>Fri, 20 Nov 2026 05:00:00 GMT</pubDate>
 </item>

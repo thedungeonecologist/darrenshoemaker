@@ -2,14 +2,15 @@
 title: "Introduction to Quarto"
 author: "Darren Shoemaker"
 date: today
-image: false
-categories: 
+categories:
+  - workshops
+  - collaboration
 format: 
   html:
     toc: true
     toc-depth: 3
     code-copy: true
-embed-resources: true
+    embed-resources: true
 ---
 
 ::: callout-note
@@ -137,16 +138,13 @@ Code chunks are the "dynamic" component of a Quarto document. To add a code chun
 For example, we're going to use the classic "iris" dataset from Ronald Fisher. We will load the data, inspect the dataframe with `head()`, plot flower petal lengths and widths by species, and finally add a legend.
 
 ```{r}
-# Load the iris dataset
+#| classes: nolisting
 data(iris)
 
-# Display the first few rows of the dataset
 head(iris)
 
-# Create a scatter plot of petal length vs width, colored by species
 plot(Petal.Length ~ Petal.Width, col = Species, data = iris, pch = 19)
 
-# Add a legend to identify the species
 legend(
   x = "topleft",
   legend = levels(iris$Species),
