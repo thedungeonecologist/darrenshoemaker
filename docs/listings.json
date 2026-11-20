@@ -2,17 +2,13 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/quarto_intro/index.html",
+      "/posts/artofresearch_2026/index.html",
       "/posts/howtowrite/index.html",
+      "/posts/github_rstudio/index.html",
+      "/posts/afs_2025/index.html",
       "/posts/codingcollaboration/index.html",
       "/posts/staying_organized/index.html"
-    ]
-  },
-  {
-    "listing": "/outreach.html",
-    "items": [
-      "/outreach/artofresearch_2026/index.html",
-      "/outreach/github_rstudio/index.html",
-      "/outreach/afs_2025/index.html"
     ]
   }
 ]

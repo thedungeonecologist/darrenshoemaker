@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://your-website-url.example.com/posts.html</loc>
-    <lastmod>2026-07-20T13:04:33.442Z</lastmod>
+    <lastmod>2026-11-20T17:06:58.565Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/howtowrite/index.html</loc>
-    <lastmod>2026-07-02T12:34:47.673Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/quarto_intro/index.html</loc>
+    <lastmod>2026-11-20T16:56:51.863Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/outreach.html</loc>
-    <lastmod>2026-07-15T16:56:25.979Z</lastmod>
+    <loc>https://your-website-url.example.com/posts/github_rstudio/index.html</loc>
+    <lastmod>2026-07-15T16:58:37.388Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/outreach/artofresearch_2026/index.html</loc>
+    <loc>https://your-website-url.example.com/posts/artofresearch_2026/index.html</loc>
     <lastmod>2026-09-09T18:04:46.840Z</lastmod>
   </url>
   <url>
@@ -22,19 +22,19 @@
   </url>
   <url>
     <loc>https://your-website-url.example.com/cv.html</loc>
-    <lastmod>2026-11-10T20:22:38.853Z</lastmod>
+    <lastmod>2026-11-20T17:03:38.603Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/outreach/afs_2025/index.html</loc>
+    <loc>https://your-website-url.example.com/posts/afs_2025/index.html</loc>
     <lastmod>2026-07-15T16:58:23.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/outreach/github_rstudio/index.html</loc>
-    <lastmod>2026-07-15T16:58:37.388Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/codingcollaboration/index.html</loc>
     <lastmod>2026-07-20T13:12:49.823Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/posts/howtowrite/index.html</loc>
+    <lastmod>2026-07-02T12:34:47.673Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/staying_organized/index.html</loc>

@@ -15,8 +15,6 @@ website:
         href: index.qmd
       - text: Blog
         href: posts.qmd
-      - text: Outreach
-        href: outreach.qmd
       - text: CV
         href: cv.qmd
       - icon: github
