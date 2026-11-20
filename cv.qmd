@@ -152,6 +152,8 @@ embed-resources: true
 
 #### [Workshops Led]{.underline}
 
+2026 - Introduction to Quarto.
+
 2025 - Integrating GitHub and RStudio.
 
 #### [Other Teaching Activity]{.underline}
