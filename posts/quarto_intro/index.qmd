@@ -2,6 +2,7 @@
 title: "Introduction to Quarto"
 author: "Darren Shoemaker"
 date: today
+image: false
 categories: 
 format: 
   html:
